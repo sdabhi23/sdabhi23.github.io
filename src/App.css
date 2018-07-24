@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Tillana|Comfortaa');
+
+#App {
+  text-align: center;
+}
+
+.ReactTypeformEmbed {
+  position: auto;
+}
+
+#header {
+  background-image: url('./img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-bottom: solid 2px #EF233C;
+}
+
+#header-logo {
+  margin-top: auto;
+  height: 40vh;
+}
+
+#header-arrow {
+  animation: btn-jump 1s infinite;
+}
+
+@media only screen and (min-width: 600px) {
+  #header-title {
+    font-family: 'Tillana', cursive;
+    font-size: 3em;
+    margin: 1rem;
+  }
+
+  #header-subtitle {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2em;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  #header-logo {
+    height: 25vh;
+  }
+
+  #header-title {
+    font-family: 'Tillana', cursive;
+    font-size: 2em;
+  }
+
+  #header-subtitle {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+  }
+}
+
+.menu-item {
+  font-family: 'Comfortaa', cursive;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.menu-item:hover {
+  background-color: #EF233C80;
+}
+
+.menu-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.social-section {
+  position: absolute;
+  bottom: 10vh;
+  display: flex !important;
+  width: 200px;
+}
+
+.menu-logo {
+  height: 5rem;
+  margin: 0 auto 5vh auto;
+}
+
+.bm-item-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bm-menu {
+  background: #222;/*#373a47;*/
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  border-right: solid 2px #EF233C
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 30px;
+  height: 25px;
+  left: 36px;
+  top: 36px;
+}
+
+@media only screen and (max-width: 600px) {
+  .bm-burger-button {
+    left: 5vw;
+    top: 5vw;
+  }
+}
+
+.bm-burger-bars {
+  background: #EF233C;
+}
+
+.bm-cross-button {
+  height: 30px;
+  width: 30px;
+}
+
+.bm-cross {
+  background: #EF233C;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes btn-jump {
+  from { transform: initial; }
+  50% { transform: translateY(2vh); }
+  to { transform: initial; }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: orangered;
+}
