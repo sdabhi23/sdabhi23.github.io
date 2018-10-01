@@ -135,7 +135,7 @@ const ContactFormWrapper = withFormik({
 
   handleSubmit: (values, { setSubmitting }) => {
     var success = true;
-    var url = 'https://app.airfield37.hasura-app.io/contact';
+    var url = 'https://sendgrid-mailer-api.herokuapp.com/contact';
     var formData = new FormData();
     formData.append("name", values.name);
     formData.append("email", values.email);
