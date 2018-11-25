@@ -1,14 +1,12 @@
 #work {
-  background-image: url('../img/tile_2.png');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
-  border-bottom: #EF233C solid 2px;
 }
 
 #work-title {
-  margin: 5vh auto 5vh auto;
+  margin: 5vh auto 5vh 5vw;
   color: white;
   font-family: 'Tillana', cursive;
   font-size: 3em;
@@ -23,9 +21,11 @@
 
 .hasura {
   background-image: url("../img/hasura.png");
+  background-size: 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #E14E25;
+  background-color: white;
+  border-right: #455A64 solid 1px;
 }
 
 .sw {
@@ -33,22 +33,23 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-color: white;
+  border-right: #455A64 solid 1px;
 }
 
 #work-description a {
   margin: 10px 10px 0 0;
   text-decoration: none;
-  color: white;
-  background-color: #222;
+  color: #455A64;
+  background-color: white;
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid #455A64;
   border-radius: 5px;
   width: 40%;
 }
 
 #work-description a:hover {
-  border-color: #EF233C;
-  color: #EF233C;
+  background-color: #455A64;
+  color: white;
 }
 
 #work-description div {
@@ -66,12 +67,12 @@
   width: 45vw;
   margin: auto 10px;
   border-radius: 10px;
-  background-color: #222;
+  background-color: white;
   display: flex;
   flex-direction: row;
-  border: solid 1px #EF233C;
-  color: white;
-  font-family: 'Comfortaa', cursive;
+  border: solid 1px white;
+  color: #455A64;
+  font-family: 'Roboto', sans-serif;
 }
 
 #work-description {
@@ -80,6 +81,12 @@
 }
 
 @media only screen and (max-width: 1000px) {
+
+  .hasur,.sw {
+    border-right: 0;
+    border-bottom: #455A64 solid 1px;
+  }
+
   #work-line {
     flex-direction: column;
   }
@@ -102,11 +109,12 @@
 
   #work-item {
     font-size: 2em;
-    width: 75vw;
+    width: 90vw;
     margin: auto;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   }
 
   .work-img {
@@ -121,22 +129,26 @@
 #project-line {
   display: flex;
   flex-direction: row;
-  padding: 0 5vw;
+  padding: 0;
 }
 
 #project-item {
   width: 45vw;
-  padding: 0 2.5vw;
   display: flex;
   flex-direction: column;
-  font-family: "Comfortaa", cursive;
-  color: white;
+  font-family: 'Roboto', sans-serif;
+  color: #455A64;
+  background-color: white;
+  margin: 2vh 2.5vw;
+  padding: 1.5vw;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 #project-item h2 {
-  color: #EF233C;
+  color: #455A64;
   margin-bottom: 0px;
-  margin-top: 25px;
+  margin-top: 0px;
 }
 
 #project-item p {
@@ -148,24 +160,24 @@
 #project-item a {
   margin: 10px 10px 0 0;
   text-decoration: none;
-  color: white;
-  background-color: #222;
+  color: #455A64;
+  background-color: white;
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid #455A64;
   border-radius: 5px;
   width: 40%;
 }
 
 #project-item a:hover {
-  border-color: #EF233C;
-  color: #EF233C;
+  background-color: #455A64;
+  color: white;
 }
 
 #project-item div {
   display: flex;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
   #work-title {
     font-size: 2em;
   }
@@ -175,6 +187,7 @@
   }
 
   #project-item {
-    width: 100%;
+    width: 90vw;
+    padding: 2vh 2.5vw;
   }
 }

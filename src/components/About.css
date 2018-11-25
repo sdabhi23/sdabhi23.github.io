@@ -1,6 +1,4 @@
 #about {
-  background-color: #222;
-  background-image: url('../img/tile_1.png');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,20 +7,20 @@
   padding: 1vh;
   padding-bottom: 5vh;
   text-align: center;
-  border-bottom: solid 2px #EF233C;
 }
 
 #about-text {
   color: white;
   padding: 0 32px;
   margin: 0;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 #about-img {
   height: 23vh;
-  border: solid #EF233C 2px;
+  border: solid white 2px;
   border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 #about-title {

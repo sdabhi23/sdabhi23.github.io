@@ -6,10 +6,10 @@ import {
     faJava, faAndroid, faPython, faDocker, faReact, faHtml5, faCss3Alt, faJs, faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
 
-const contactProps = { fontSize: '40', color: '#e3e3e3' };
-const languageProps = { fontSize: '25', color: '#e3e3e3' };
+const contactProps = { fontSize: '50', color: '#e3e3e3' };
+const languageProps = { fontSize: '25', color: '#455A64' };
 
-export const ArrowDown = () => <FontAwesomeIcon icon={faChevronCircleDown} style={{ fontSize: '48', color: '#EF233C', marginTop: '5vh', marginBottom: '10vh'}} />
+export const ArrowDown = () => <FontAwesomeIcon icon={faChevronCircleDown} style={{ fontSize: '48', color: 'white', marginTop: '5vh', marginBottom: '10vh'}} />
 
 export const ContactLinkedIn= () => <FontAwesomeIcon icon={faLinkedin} style={contactProps} />
 export const ContactTwitter= () => <FontAwesomeIcon icon={faTwitterSquare} style={contactProps} />

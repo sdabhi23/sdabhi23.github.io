@@ -1,10 +1,9 @@
 #contact  {
-  background-image: url('../img/tile_3.png');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Roboto', sans-serif;
   color: white;
 }
 
@@ -33,7 +32,7 @@ form {
 }
 
 input {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Roboto', sans-serif;
   background-color: #222;
   color: white;
   margin-top: 20px;
@@ -56,7 +55,7 @@ input:focus {
 }
 
 textarea {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Roboto', sans-serif;
   background-color: #222;
   color: white;
   margin-top: 20px;

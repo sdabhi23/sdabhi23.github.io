@@ -7,10 +7,10 @@ export default class Work extends React.Component {
   render() {
     return(
       <div id="work">
-        <h1 id="work-title">Projects<hr style={{margin: '0', borderColor: '#EF233C', backgroundColor: '#EF233C'}}/></h1>
+        <h1 id="work-title">Projects<hr style={{margin: '0', borderColor: 'white', backgroundColor: 'white'}}/></h1>
         <div id="project-line">
           <div id="project-item">
-            <h2>NSS Gujarat (WIP)</h2>
+            <h2>NSS Gujarat</h2>
             <p>An app for digitizing the WORK DIARY of volunteers</p>
             <p>Languages: <ReactIcon/></p>
             <div>
@@ -18,16 +18,16 @@ export default class Work extends React.Component {
             </div>
           </div>
           <div id="project-item">
-            <h2>FCC FrontEnd (WIP)</h2>
+            <h2>FCC Frontend Projects</h2>
             <p>Github repository for the front-end projects on FreeCodeCamp</p>
-            <p>Languages: HTML <HTML/> CSS <CSS/> <JS/></p>
+            <p>Languages: <HTML/> <CSS/> <JS/></p>
             <div>
               <a href="https://github.com/sdabhi23/FCC-Projects/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
               <a href="https://sdabhi23.github.io/FCC-Projects/" target="_blank" rel="noopener noreferrer" ><DemoLink/>Demo</a>
             </div>
           </div>
           <div id="project-item">
-            <h2>FCC BackEnd</h2>
+            <h2>FCC Backend Projects</h2>
             <p>Github repository for the API and Microservices projects on FreeCodeCamp</p>
             <p>Languages: <Node/></p>
             <div>
@@ -62,7 +62,7 @@ export default class Work extends React.Component {
             </div>
           </div>
         </div>
-        <h1 id="work-title">Positions Held<hr style={{margin: '0', borderColor: '#EF233C', backgroundColor: '#EF233C'}}/></h1>
+        <h1 id="work-title">Positions Held<hr style={{margin: '0', borderColor: 'white', backgroundColor: 'white'}}/></h1>
         <div id="work-line">
           <div id="work-item">
             <div className="work-img hasura"></div>
