@@ -82,7 +82,7 @@
 
 @media only screen and (max-width: 1000px) {
 
-  .hasur,.sw {
+  .hasura,.sw {
     border-right: 0;
     border-bottom: #455A64 solid 1px;
   }

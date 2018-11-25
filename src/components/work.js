@@ -10,28 +10,28 @@ export default class Work extends React.Component {
         <h1 id="work-title">Projects<hr style={{margin: '0', borderColor: 'white', backgroundColor: 'white'}}/></h1>
         <div id="project-line">
           <div id="project-item">
-            <h2>NSS Gujarat</h2>
-            <p>An app for digitizing the WORK DIARY of volunteers</p>
-            <p>Languages: <ReactIcon/></p>
+            <h2>Count'em All</h2>
+            <p>A simple app to count the number of people attending a gathering. Made it to the honourable mentions on the Jaamstack Hackathon!</p>
+            <p>Languages: <ReactIcon/> <Node/></p>
             <div>
-              <a href="https://snack.expo.io/@sdabhi23/nss-gujarat/" target="_blank" rel="noopener noreferrer" ><ReactLink/>Expo</a>
+              <a href="https://github.com/sdabhi23/count-em-all/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
+              <a href="https://count-em-all.netlify.com//" target="_blank" rel="noopener noreferrer" ><DemoLink/>Demo</a>
             </div>
           </div>
           <div id="project-item">
-            <h2>FCC Frontend Projects</h2>
-            <p>Github repository for the front-end projects on FreeCodeCamp</p>
-            <p>Languages: <HTML/> <CSS/> <JS/></p>
+            <h2>People Occupation Classifier</h2>
+            <p>Automatically classify Wikipedia people articles into occupation categories using multiclass naive bayes classification.</p>
+            <p>Languages: <Python/></p>
             <div>
-              <a href="https://github.com/sdabhi23/FCC-Projects/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
-              <a href="https://sdabhi23.github.io/FCC-Projects/" target="_blank" rel="noopener noreferrer" ><DemoLink/>Demo</a>
+              <a href="https://github.com/sdabhi23/people-occupations-classifier/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
             </div>
           </div>
           <div id="project-item">
-            <h2>FCC Backend Projects</h2>
-            <p>Github repository for the API and Microservices projects on FreeCodeCamp</p>
-            <p>Languages: <Node/></p>
+            <h2>Twitter Clone</h2>
+            <p>A near perfect replica of the UI of Twitter's app for Android using mock hard-coded data wherever required.</p>
+            <p>Languages: <Android/></p>
             <div>
-              <a href="https://github.com/sdabhi23/FCC-API-Projects/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
+              <a href="https://github.com/sdabhi23/HPDF-Task1-Twitter-Clone/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
             </div>
           </div>
         </div>
@@ -59,6 +59,33 @@ export default class Work extends React.Component {
             <p>Languages: <Android/> <Java/></p>
             <div>
               <a href="https://github.com/sdabhi23/Swallow-Server/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
+            </div>
+          </div>
+        </div>
+        <div id="project-line">
+          <div id="project-item">
+            <h2>NSS Gujarat</h2>
+            <p>An app for digitizing the WORK DIARY of volunteers</p>
+            <p>Languages: <ReactIcon/></p>
+            <div>
+              <a href="https://snack.expo.io/@sdabhi23/nss-gujarat/" target="_blank" rel="noopener noreferrer" ><ReactLink/>Expo</a>
+            </div>
+          </div>
+          <div id="project-item">
+            <h2>FCC Frontend Projects</h2>
+            <p>Github repository for the front-end projects on FreeCodeCamp</p>
+            <p>Languages: <HTML/> <CSS/> <JS/></p>
+            <div>
+              <a href="https://github.com/sdabhi23/FCC-Projects/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
+              <a href="https://sdabhi23.github.io/FCC-Projects/" target="_blank" rel="noopener noreferrer" ><DemoLink/>Demo</a>
+            </div>
+          </div>
+          <div id="project-item">
+            <h2>FCC Backend Projects</h2>
+            <p>Github repository for the API and Microservices projects on FreeCodeCamp</p>
+            <p>Languages: <Node/></p>
+            <div>
+              <a href="https://github.com/sdabhi23/FCC-API-Projects/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
             </div>
           </div>
         </div>
