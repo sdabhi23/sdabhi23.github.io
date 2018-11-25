@@ -157,7 +157,7 @@
   margin-top: 10px;
 }
 
-#project-item a {
+#project-item .btn-link {
   margin: 10px 10px 0 0;
   text-decoration: none;
   color: #455A64;
@@ -168,7 +168,7 @@
   width: 40%;
 }
 
-#project-item a:hover {
+#project-item .btn-link:hover {
   background-color: #455A64;
   color: white;
 }

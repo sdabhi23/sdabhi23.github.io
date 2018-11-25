@@ -11,11 +11,11 @@ export default class Work extends React.Component {
         <div id="project-line">
           <div id="project-item">
             <h2>Count'em All</h2>
-            <p>A simple app to count the number of people attending a gathering. Made it to the honourable mentions on the Jaamstack Hackathon!</p>
+            <p>A simple app to count the number of people attending a gathering. Made it to the honourable mentions on the <a href="https://medium.freecodecamp.org/winners-from-the-2018-freecodecamp-jamstack-hackathon-at-github-2a39bd1db878" target="_blank" rel="noopener noreferrer" >Jamstack Hackathon</a>!</p>
             <p>Languages: <ReactIcon/> <Node/></p>
             <div>
-              <a href="https://github.com/sdabhi23/count-em-all/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
-              <a href="https://count-em-all.netlify.com//" target="_blank" rel="noopener noreferrer" ><DemoLink/>Demo</a>
+              <a class="btn-link" href="https://github.com/sdabhi23/count-em-all/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
+              <a class="btn-link" href="https://count-em-all.netlify.com//" target="_blank" rel="noopener noreferrer" ><DemoLink/>Demo</a>
             </div>
           </div>
           <div id="project-item">
@@ -23,15 +23,15 @@ export default class Work extends React.Component {
             <p>Automatically classify Wikipedia people articles into occupation categories using multiclass naive bayes classification.</p>
             <p>Languages: <Python/></p>
             <div>
-              <a href="https://github.com/sdabhi23/people-occupations-classifier/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
+              <a class="btn-link" href="https://github.com/sdabhi23/people-occupations-classifier/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
             </div>
           </div>
           <div id="project-item">
             <h2>Twitter Clone</h2>
             <p>A near perfect replica of the UI of Twitter's app for Android using mock hard-coded data wherever required.</p>
-            <p>Languages: <Android/></p>
+            <p>Languages: <Android/> <Java/></p>
             <div>
-              <a href="https://github.com/sdabhi23/HPDF-Task1-Twitter-Clone/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
+              <a class="btn-link" href="https://github.com/sdabhi23/HPDF-Task1-Twitter-Clone/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
             </div>
           </div>
         </div>
@@ -41,8 +41,8 @@ export default class Work extends React.Component {
             <p>Python library for extracting real-time data from Bombay Stock Exchange (India).</p>
             <p>Languages: <Python/></p>
             <div>
-              <a href="https://github.com/sdabhi23/bsedata/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
-              <a href="https://pypi.org/project/bsedata/" target="_blank" rel="noopener noreferrer" ><PyPiLink/>PyPi</a>
+              <a class="btn-link" href="https://github.com/sdabhi23/bsedata/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
+              <a class="btn-link" href="https://pypi.org/project/bsedata/" target="_blank" rel="noopener noreferrer" ><PyPiLink/>PyPi</a>
             </div>
           </div>
           <div id="project-item">
@@ -50,7 +50,7 @@ export default class Work extends React.Component {
             <p>A self hosted programming platform based on Docker containers.</p>
             <p>Languages: <Python/> <Docker/></p>
             <div>
-              <a href="https://github.com/sdabhi23/Code-It-Now/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
+              <a class="btn-link" href="https://github.com/sdabhi23/Code-It-Now/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
             </div>
           </div>
           <div id="project-item">
@@ -58,7 +58,7 @@ export default class Work extends React.Component {
             <p>A simple, quick and light-weight FTP server for Android smartphones.</p>
             <p>Languages: <Android/> <Java/></p>
             <div>
-              <a href="https://github.com/sdabhi23/Swallow-Server/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
+              <a class="btn-link" href="https://github.com/sdabhi23/Swallow-Server/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default class Work extends React.Component {
             <p>An app for digitizing the WORK DIARY of volunteers</p>
             <p>Languages: <ReactIcon/></p>
             <div>
-              <a href="https://snack.expo.io/@sdabhi23/nss-gujarat/" target="_blank" rel="noopener noreferrer" ><ReactLink/>Expo</a>
+              <a class="btn-link" href="https://snack.expo.io/@sdabhi23/nss-gujarat/" target="_blank" rel="noopener noreferrer" ><ReactLink/>Expo</a>
             </div>
           </div>
           <div id="project-item">
@@ -76,8 +76,8 @@ export default class Work extends React.Component {
             <p>Github repository for the front-end projects on FreeCodeCamp</p>
             <p>Languages: <HTML/> <CSS/> <JS/></p>
             <div>
-              <a href="https://github.com/sdabhi23/FCC-Projects/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
-              <a href="https://sdabhi23.github.io/FCC-Projects/" target="_blank" rel="noopener noreferrer" ><DemoLink/>Demo</a>
+              <a class="btn-link" href="https://github.com/sdabhi23/FCC-Projects/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
+              <a class="btn-link" href="https://sdabhi23.github.io/FCC-Projects/" target="_blank" rel="noopener noreferrer" ><DemoLink/>Demo</a>
             </div>
           </div>
           <div id="project-item">
@@ -85,7 +85,7 @@ export default class Work extends React.Component {
             <p>Github repository for the API and Microservices projects on FreeCodeCamp</p>
             <p>Languages: <Node/></p>
             <div>
-              <a href="https://github.com/sdabhi23/FCC-API-Projects/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
+              <a class="btn-link" href="https://github.com/sdabhi23/FCC-API-Projects/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
             </div>
           </div>
         </div>
@@ -94,10 +94,10 @@ export default class Work extends React.Component {
           <div id="work-item">
             <div className="work-img hasura"></div>
             <div id="work-description">
-              <h3>Mobile App Dev Intern</h3>
+              <h3>Product Development Fellow (Intern)</h3>
               <p>At Hasura</p>
               <p>Nov 2017 - Feb 2018</p>
-              <p>Testing their current platform offerings, API services and scalability of the platform. Developing templates. Contributing to their platform documentation.</p>
+              <p>Testing their current platform offerings, API services and scalability of the platform. Developing boilerplate codes. Contributing to their platform documentation.</p>
               <div>
                 <a href="https://github.com/sdabhi23/Curren/" target="_blank" rel="noopener noreferrer" ><GithubLink/>Github</a>
                 <a href="https://platform.hasura.io/hub/projects/sdabhi23/currency-bot/" target="_blank" rel="noopener noreferrer" ><DemoLink/>Demo</a>
