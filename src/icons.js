@@ -6,30 +6,31 @@ import {
     faJava, faAndroid, faPython, faDocker, faReact, faHtml5, faCss3Alt, faJs, faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
 
-const contactProps = { fontSize: '50', color: '#e3e3e3' };
-const languageProps = { fontSize: '25', color: '#455A64' };
+const contactProps = { color: '#e3e3e3' };
+const languageProps = { color: '#455A64', marginRight: '5px', marginLeft: '5px' };
+const linkProps = { marginRight: '10px' };
 
-export const ArrowDown = () => <FontAwesomeIcon icon={faChevronCircleDown} style={{ fontSize: '48', color: 'white', marginTop: '5vh', marginBottom: '10vh'}} />
+export const ArrowDown = () => <FontAwesomeIcon icon={faChevronCircleDown} style={{ color: 'white', marginTop: '5vh', marginBottom: '10vh'}} size="3x"/>
 
-export const ContactLinkedIn= () => <FontAwesomeIcon icon={faLinkedin} style={contactProps} />
-export const ContactTwitter= () => <FontAwesomeIcon icon={faTwitterSquare} style={contactProps} />
-export const ContactGithub = () => <FontAwesomeIcon icon={faGithubSquare} style={contactProps} />
-export const ContactMedium = () => <FontAwesomeIcon icon={faMedium} style={contactProps} />
-export const ContactFacebook = () => <FontAwesomeIcon icon={faFacebook} style={contactProps} />
+export const ContactLinkedIn= () => <FontAwesomeIcon icon={faLinkedin} style={contactProps} size="3x" />
+export const ContactTwitter= () => <FontAwesomeIcon icon={faTwitterSquare} style={contactProps} size="3x" />
+export const ContactGithub = () => <FontAwesomeIcon icon={faGithubSquare} style={contactProps} size="3x" />
+export const ContactMedium = () => <FontAwesomeIcon icon={faMedium} style={contactProps} size="3x" />
+export const ContactFacebook = () => <FontAwesomeIcon icon={faFacebook} style={contactProps} size="3x" />
 
-export const Java = () => <FontAwesomeIcon icon={faJava} style={languageProps} />
-export const Android = () => <FontAwesomeIcon icon={faAndroid} style={languageProps} />
-export const Python = () => <FontAwesomeIcon icon={faPython} style={languageProps} />
-export const Docker = () => <FontAwesomeIcon icon={faDocker} style={languageProps} />
-export const ReactIcon = () => <FontAwesomeIcon icon={faReact} style={languageProps} />
-export const HTML = () => <FontAwesomeIcon icon={faHtml5} style={languageProps} />
-export const CSS = () => <FontAwesomeIcon icon={faCss3Alt} style={languageProps} />
-export const JS = () => <FontAwesomeIcon icon={faJs} style={languageProps} />
-export const Node = () => <FontAwesomeIcon icon={faNodeJs} style={languageProps} />
+export const Java = () => <FontAwesomeIcon icon={faJava} style={languageProps} transform="grow-6" />
+export const Android = () => <FontAwesomeIcon icon={faAndroid} style={languageProps} transform="grow-6" />
+export const Python = () => <FontAwesomeIcon icon={faPython} style={languageProps} transform="grow-6" />
+export const Docker = () => <FontAwesomeIcon icon={faDocker} style={languageProps} transform="grow-6" />
+export const ReactIcon = () => <FontAwesomeIcon icon={faReact} style={languageProps} transform="grow-6" />
+export const HTML = () => <FontAwesomeIcon icon={faHtml5} style={languageProps} transform="grow-6" />
+export const CSS = () => <FontAwesomeIcon icon={faCss3Alt} style={languageProps} transform="grow-6" />
+export const JS = () => <FontAwesomeIcon icon={faJs} style={languageProps} transform="grow-6" />
+export const Node = () => <FontAwesomeIcon icon={faNodeJs} style={languageProps} transform="grow-6" />
 
-export const GithubLink = () => <FontAwesomeIcon icon={faGithub} style={{ fontSize: '20', marginRight: '10px' }} />
-export const DemoLink = () => <FontAwesomeIcon icon={faStroopwafel} style={{ fontSize: '20', marginRight: '10px' }} />
-export const PyPiLink = () => <FontAwesomeIcon icon={faPython} style={{ fontSize: '20', marginRight: '10px' }} />
-export const ReactLink = () => <FontAwesomeIcon icon={faReact} style={{ fontSize: '20', marginRight: '10px' }} />
+export const GithubLink = () => <FontAwesomeIcon icon={faGithub} style={linkProps} transform="grow-4" />
+export const DemoLink = () => <FontAwesomeIcon icon={faStroopwafel} style={linkProps} transform="grow-4" />
+export const PyPiLink = () => <FontAwesomeIcon icon={faPython} style={linkProps} transform="grow-4" />
+export const ReactLink = () => <FontAwesomeIcon icon={faReact} style={linkProps} transform="grow-4" />
 
 export const LoadingIcon = () => <FontAwesomeIcon icon={faSpinner} style={{ fontSize: '20' }} spin />
