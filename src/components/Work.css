@@ -8,7 +8,7 @@
 #work-title {
   margin: 5vh auto 5vh 5vw;
   color: white;
-  font-family: 'Tillana', cursive;
+  font-family: "Tillana", cursive;
   font-size: 3em;
 }
 
@@ -25,7 +25,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-color: white;
-  border-right: #455A64 solid 1px;
+  border-right: #455a64 solid 1px;
 }
 
 .sw {
@@ -33,22 +33,30 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-color: white;
-  border-right: #455A64 solid 1px;
+  border-right: #455a64 solid 1px;
+}
+
+.taaraka {
+  background-image: url("../img/taaraka.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  border-right: #455a64 solid 1px;
 }
 
 #work-description a {
   margin: 10px 10px 0 0;
   text-decoration: none;
-  color: #455A64;
+  color: #455a64;
   background-color: white;
   padding: 10px;
-  border: 1px solid #455A64;
+  border: 1px solid #455a64;
   border-radius: 5px;
   width: 40%;
 }
 
 #work-description a:hover {
-  background-color: #455A64;
+  background-color: #455a64;
   color: white;
 }
 
@@ -64,15 +72,15 @@
 }
 
 #work-item {
-  width: 45vw;
-  margin: auto 10px;
+  width: 33vw;
+  margin: 10px;
   border-radius: 10px;
   background-color: white;
   display: flex;
   flex-direction: row;
   border: solid 1px white;
-  color: #455A64;
-  font-family: 'Roboto', sans-serif;
+  color: #455a64;
+  font-family: "Roboto", sans-serif;
 }
 
 #work-description {
@@ -81,10 +89,11 @@
 }
 
 @media only screen and (max-width: 1000px) {
-
-  .hasura,.sw {
+  .taaraka,
+  .hasura,
+  .sw {
     border-right: 0;
-    border-bottom: #455A64 solid 1px;
+    border-bottom: #455a64 solid 1px;
   }
 
   #work-line {
@@ -114,7 +123,7 @@
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
 
   .work-img {
@@ -136,17 +145,17 @@
   width: 45vw;
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
-  color: #455A64;
+  font-family: "Roboto", sans-serif;
+  color: #455a64;
   background-color: white;
   margin: 2vh 2.5vw;
   padding: 1.5vw;
   border-radius: 5px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 #project-item h2 {
-  color: #455A64;
+  color: #455a64;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -160,16 +169,16 @@
 #project-item .btn-link {
   margin: 10px 10px 0 0;
   text-decoration: none;
-  color: #455A64;
+  color: #455a64;
   background-color: white;
   padding: 10px;
-  border: 1px solid #455A64;
+  border: 1px solid #455a64;
   border-radius: 5px;
   width: 40%;
 }
 
 #project-item .btn-link:hover {
-  background-color: #455A64;
+  background-color: #455a64;
   color: white;
 }
 
