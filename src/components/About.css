@@ -9,9 +9,9 @@
 
 #about-text {
   color: white;
-  padding: 0 32px;
+  padding: 0 256px;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #about-img {
@@ -31,5 +31,9 @@
 @media only screen and (max-width: 1030px) {
   #about-title {
     font-size: 2em;
+  }
+
+  #about-text {
+    padding: 0 32px;
   }
 }

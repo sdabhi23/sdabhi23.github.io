@@ -47,16 +47,16 @@
 #work-description a {
   margin: 10px 10px 0 0;
   text-decoration: none;
-  color: #455a64;
+  color: #333333;
   background-color: white;
   padding: 10px;
-  border: 1px solid #455a64;
+  border: 1px solid #333333;
   border-radius: 5px;
   width: 40%;
 }
 
 #work-description a:hover {
-  background-color: #455a64;
+  background-color: #333333;
   color: white;
 }
 
@@ -72,15 +72,15 @@
 }
 
 #work-item {
-  width: 33vw;
+  width: 45vw;
   margin: 10px;
   border-radius: 10px;
   background-color: white;
   display: flex;
   flex-direction: row;
   border: solid 1px white;
-  color: #455a64;
-  font-family: "Roboto", sans-serif;
+  color: #333333;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #work-description {
@@ -132,6 +132,8 @@
     border-bottom-left-radius: 0;
     height: 100px;
     width: auto;
+    border-right: 0;
+    border-bottom: #333333 solid 1px;
   }
 }
 
@@ -145,8 +147,8 @@
   width: 45vw;
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
-  color: #455a64;
+  font-family: "Ubuntu", sans-serif;
+  color: #333333;
   background-color: white;
   margin: 2vh 2.5vw;
   padding: 1.5vw;
@@ -169,16 +171,16 @@
 #project-item .btn-link {
   margin: 10px 10px 0 0;
   text-decoration: none;
-  color: #455a64;
+  color: #333333;
   background-color: white;
   padding: 10px;
-  border: 1px solid #455a64;
+  border: 1px solid #333333;
   border-radius: 5px;
   width: 40%;
 }
 
 #project-item .btn-link:hover {
-  background-color: #455a64;
+  background-color: #333333;
   color: white;
 }
 
