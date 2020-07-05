@@ -7,6 +7,61 @@ export default class Work extends React.Component {
   render() {
     return (
       <div id="work">
+        <h1 id="work-title">Positions Held<hr style={{ margin: '0', borderColor: 'white', backgroundColor: 'white' }} /></h1>
+        <div id="work-line">
+          <div id="work-item">
+            <div className="work-img bosch"></div>
+            <div id="work-description">
+              <h3>Project Trainee</h3>
+              <p>At Robert Bosch Engineering and Business Solutions</p>
+              <p>Jan 2020 - Jun 2020</p>
+              <ul>
+                <li>Surpassed NumPy’s algorithm for eigen decomposition under certain constraints</li>
+                <li>Built systems using quantum computing and quantum inspired classical algorithms</li>
+                <li>Surpassed state-of-the-art techniques in graph based machine learning</li>
+                <li>Published 2 papers, filed 4 invention reports and released 1 python package on PyPI</li>
+              </ul>
+            </div>
+          </div>
+          <div id="work-item">
+            <div className="work-img ln"></div>
+            <div id="work-description">
+              <h3>Software Engineering Trainee</h3>
+              <p>At LetsNurture Infotech</p>
+              <p>May 2019 - Jul 2019</p>
+              <ul>
+                <li>Worked on developing POCs for potential and existing clients, and doing research and feasibility studies on new project leads</li>
+                <li>Projects undertaken include Visual Search, Virtual Try On, IoT in cricket, Nutrition Classification, and Invoice Processing and Classification</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="work-line">
+          <div id="work-item">
+            <div className="work-img taaraka"></div>
+            <div id="work-description">
+              <h3>ML Intern</h3>
+              <p>At Taaraka Technologies</p>
+              <p>Dec 2018 - Feb 2019</p>
+              <ul>
+                <li>Worked on the math behind the basic algorithms of Machine Learning and Deep Learning</li>
+                <li>Projects undertaken include applying unsupervised learning on company data to find meaningful trends, and applying and evaluating supervised learning algorithms to classify a subset of BBC’s Hindi language news articles</li>
+              </ul>
+            </div>
+          </div>
+          <div id="work-item">
+            <div className="work-img hasura"></div>
+            <div id="work-description">
+              <h3>Product Development Fellow</h3>
+              <p>At Hasura Technologies</p>
+              <p>Dec 2017 - Feb 2018</p>
+              <ul>
+                <li>Created a basic boilerplate for deploying a chatbot using Dialogflow and Hasura k8s platform</li>
+                <li>Contributed to the platform’s documentation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <h1 id="work-title">Projects<hr style={{ margin: '0', borderColor: 'white', backgroundColor: 'white' }} /></h1>
         <div id="project-line">
           <div id="project-item">
@@ -59,36 +114,6 @@ export default class Work extends React.Component {
             <p>Languages: <Android /> <Java /></p>
             <div>
               <a class="btn-link" href="https://github.com/sdabhi23/Swallow-Server/" target="_blank" rel="noopener noreferrer" ><GithubLink />Github</a>
-            </div>
-          </div>
-        </div>
-        <h1 id="work-title">Positions Held<hr style={{ margin: '0', borderColor: 'white', backgroundColor: 'white' }} /></h1>
-        <div id="work-line">
-          <div id="work-item">
-            <div className="work-img taaraka"></div>
-            <div id="work-description">
-              <h3>ML Intern</h3>
-              <p>At Taaraka Technologies</p>
-              <p>Dec 2018 - Feb 2019</p>
-              <p>Worked on the math behind the basic algorithms of Machine Learning and Deep Learning. Projects undertaken include applying unsupervised learning on company data to find meaningful trends, and applying and evaluating supervised learning algorithms to classify a subset of BBC’s Hindi language news articles.</p>
-            </div>
-          </div>
-          <div id="work-item">
-            <div className="work-img hasura"></div>
-            <div id="work-description">
-              <h3>Product Development Fellow (Intern)</h3>
-              <p>At Hasura</p>
-              <p>Nov 2017 - Feb 2018</p>
-              <p>Testing their current platform offerings, API services and scalability of the platform. Developing boilerplate codes. Contributing to their platform documentation.</p>
-            </div>
-          </div>
-          <div id="work-item">
-            <div className="work-img sw"></div>
-            <div id="work-description">
-              <h3>Web Dev Intern</h3>
-              <p>At Silverwing Technologies</p>
-              <p>Jul 2017 - Aug 2017</p>
-              <p>Developed a website using Bootstrap and PHP as a part of the internship. Obtained knowledge of FTP connections and about configuring deployment servers.</p>
             </div>
           </div>
         </div>

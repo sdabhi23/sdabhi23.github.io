@@ -2,21 +2,21 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleDown, faStroopwafel, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import {
-    faLinkedin, faTwitterSquare, faGithubSquare, faMedium, faGithub, faFacebook,
+    faLinkedin, faTwitter, faMedium, faGithub, faOrcid,
     faJava, faAndroid, faPython, faDocker, faReact, faHtml5, faCss3Alt, faJs, faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
 
 const contactProps = { color: '#e3e3e3' };
-const languageProps = { color: '#455A64', marginRight: '5px', marginLeft: '5px' };
+const languageProps = { color: '#333333', marginRight: '5px', marginLeft: '5px' };
 const linkProps = { marginRight: '10px' };
 
 export const ArrowDown = () => <FontAwesomeIcon icon={faChevronCircleDown} style={{ color: 'white', marginTop: '5vh', marginBottom: '10vh'}} size="3x"/>
 
 export const ContactLinkedIn= () => <FontAwesomeIcon icon={faLinkedin} style={contactProps} size="3x" />
-export const ContactTwitter= () => <FontAwesomeIcon icon={faTwitterSquare} style={contactProps} size="3x" />
-export const ContactGithub = () => <FontAwesomeIcon icon={faGithubSquare} style={contactProps} size="3x" />
+export const ContactTwitter= () => <FontAwesomeIcon icon={faTwitter} style={contactProps} size="3x" />
+export const ContactGithub = () => <FontAwesomeIcon icon={faGithub} style={contactProps} size="3x" />
 export const ContactMedium = () => <FontAwesomeIcon icon={faMedium} style={contactProps} size="3x" />
-export const ContactFacebook = () => <FontAwesomeIcon icon={faFacebook} style={contactProps} size="3x" />
+export const ContactOrcid = () => <FontAwesomeIcon icon={faOrcid} style={contactProps} size="3x" />
 
 export const Java = () => <FontAwesomeIcon icon={faJava} style={languageProps} transform="grow-6" />
 export const Android = () => <FontAwesomeIcon icon={faAndroid} style={languageProps} transform="grow-6" />

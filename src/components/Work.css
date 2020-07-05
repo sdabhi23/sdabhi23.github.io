@@ -14,34 +14,42 @@
 
 .work-img {
   height: auto;
-  width: 25%;
+  width: 20%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
 .hasura {
   background-image: url("../img/hasura.png");
-  background-size: 50%;
+  background-size: 30%;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: white;
-  border-right: #455a64 solid 1px;
-}
-
-.sw {
-  background-image: url("../img/silverwings.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: white;
-  border-right: #455a64 solid 1px;
+  border-right: #333333 solid 1px;
 }
 
 .taaraka {
-  background-image: url("../img/taaraka.png");
+  background-image: url("../img/taaraka.jfif");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: white;
-  border-right: #455a64 solid 1px;
+  border-right: #333333 solid 1px;
+}
+
+.ln {
+  background-image: url("../img/ln.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  border-right: #333333 solid 1px;
+}
+
+.bosch {
+  background-image: url("../img/bosch.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  border-right: #333333 solid 1px;
 }
 
 #work-description a {
@@ -89,13 +97,6 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .taaraka,
-  .hasura,
-  .sw {
-    border-right: 0;
-    border-bottom: #455a64 solid 1px;
-  }
-
   #work-line {
     flex-direction: column;
   }
@@ -108,8 +109,13 @@
     font-size: 0.5em;
   }
 
+  #work-description li {
+    font-size: 0.5em;
+  }
+
   #work-description h3 {
-    font-size: 1em;
+    font-size: 0.75em;
+    margin: 0.25em 0;
   }
 
   #work-description a {
@@ -130,7 +136,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0;
-    height: 100px;
+    height: 125px;
     width: auto;
     border-right: 0;
     border-bottom: #333333 solid 1px;
@@ -157,7 +163,7 @@
 }
 
 #project-item h2 {
-  color: #455a64;
+  color: #333333;
   margin-bottom: 0px;
   margin-top: 0px;
 }
