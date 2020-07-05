@@ -3,7 +3,7 @@ name: Deployment
 on:
   push:
     branches:
-      - master
+      - source
 jobs:
   deploy:
     runs-on: windows-latest
@@ -23,3 +23,4 @@ jobs:
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./build
+        publish_branch: master
