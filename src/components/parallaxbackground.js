@@ -1,10 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './ParallaxBackground.css';
+import "./ParallaxBackground.css";
 
 const ParallaxBackground = (props, context) => {
-
   return (
     <div className="parallax" style={{ color: "#333333" }}>
       <div id="stars1" />
@@ -16,7 +15,7 @@ const ParallaxBackground = (props, context) => {
 };
 
 ParallaxBackground.contextTypes = {
-  theme: PropTypes.any
+  theme: PropTypes.any,
 };
 
 export default ParallaxBackground;

@@ -11,20 +11,20 @@
   color: white;
   padding: 0 256px;
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #about-img {
   height: 23vh;
   border: solid white 2px;
   border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 #about-title {
   margin: 5vh 0;
   color: white;
-  font-family: 'Tillana', cursive;
+  font-family: "Tillana", cursive;
   font-size: 3em;
 }
 

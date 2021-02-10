@@ -1,11 +1,3 @@
-#App {
-  text-align: center;
-}
-
-.ReactTypeformEmbed {
-  position: auto;
-}
-
 #header {
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,32 +9,32 @@
   color: white;
 }
 
-#header-arrow {
-  animation: btn-jump 1s infinite;
-}
-
 #header-title {
-  font-family: 'Tillana', cursive;
+  font-family: "Tillana", cursive;
   font-size: 4em;
-  text-align: center;
 }
 
 #header-subtitle {
-  text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-subtitle > span {
+  margin: 0.25em;
 }
 
 @media only screen and (max-width: 600px) {
   #header-title {
-    font-family: 'Tillana', cursive;
+    font-family: "Tillana", cursive;
     font-size: 3em;
     margin: 1rem;
   }
 
   #header-subtitle {
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 1.1em;
     margin: 0 10px;
   }
@@ -66,7 +58,7 @@
 }
 
 .menu-item {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.25em;
   width: 100%;
   text-decoration: none;
@@ -148,7 +140,13 @@
 }
 
 @keyframes btn-jump {
-  from { transform: initial; }
-  50% { transform: translateY(2vh); }
-  to { transform: initial; }
+  from {
+    transform: initial;
+  }
+  50% {
+    transform: translateY(2vh);
+  }
+  to {
+    transform: initial;
+  }
 }

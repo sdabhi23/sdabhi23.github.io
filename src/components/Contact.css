@@ -1,9 +1,9 @@
-#contact  {
+#contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5vh 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: white;
 }
 
@@ -32,16 +32,16 @@ form {
 }
 
 input {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background-color: #222;
   color: white;
   margin-top: 20px;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 16px;
   width: 100%;
   display: block;
   line-height: 1.5;
-  border-radius: 5px;;
+  border-radius: 5px;
   border: 1.5px solid #ccc;
 }
 
@@ -55,16 +55,16 @@ input:focus {
 }
 
 textarea {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background-color: #222;
   color: white;
   margin-top: 20px;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 16px;
   width: 100%;
   display: block;
   line-height: 1.5;
-  border-radius: 5px;;
+  border-radius: 5px;
   border: 1.5px solid #ccc;
 }
 
@@ -80,14 +80,14 @@ textarea:focus {
 .error {
   background-color: #222;
   color: white;
-  border-color: #EF233C;
+  border-color: #ef233c;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
     0 0 0 3px rgba(255, 0, 0, 0.1);
 }
 
 .input-feedback {
   margin-top: 5px;
-  color: #EF233C;
+  color: #ef233c;
 }
 
 button {
@@ -111,7 +111,7 @@ button + button {
 }
 
 button:disabled {
-  opacity: .8;
+  opacity: 0.8;
   cursor: not-allowed !important;
 }
 
