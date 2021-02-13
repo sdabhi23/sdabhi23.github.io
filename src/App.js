@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import Sidebar from "./components/sidebar";
-import About from "./components/about";
 import Work from "./components/work";
 import Contact from "./components/contact";
 import ParallaxBackground from "./components/parallaxbackground";
+import main from "./img/main.jpg";
 
 import {
   ContactGithub,
@@ -19,17 +18,27 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div id="nav"></div>
-        <Sidebar />
         <ParallaxBackground />
-        <header id="header">
+        <div id="header">
+          <img src={main} id="avatar" alt="Shrey Dabhi" />
           <p id="header-title">Shrey Dabhi</p>
-          {/* <p id="header-subtitle">
-            <span>Big Data</span>
-            <span>Full Stack</span>
-            <span>Machine Learning</span>
-          </p> */}
-          <div className="social-section">
+          <p id="header-subtitle">
+            <span id="subtext">Big Data</span>
+            <span id="subtext">Full Stack</span>
+            <span id="subtext">Machine Learning</span>
+          </p>
+          <p id="about-text">
+            A passionate self-taught developer, with a knack for creating
+            engaging user experiences and performant systems. Able to
+            effectively leverage recent and emerging technologies to achieve the
+            required functionalities. I enjoy learning new skills, improving old
+            ones and{" "}
+            <span role="img" aria-label="heart">
+              ❤️️
+            </span>{" "}
+            to deploy whatever I build!
+          </p>
+          <div id="acc-links">
             <a
               className="about-social"
               href="https://github.com/sdabhi23"
@@ -66,8 +75,7 @@ class App extends Component {
               <ContactTwitter />
             </a>
           </div>
-        </header>
-        <About />
+        </div>
         <Work />
         <Contact />
       </div>
