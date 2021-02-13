@@ -4,27 +4,31 @@
   "private": true,
   "homepage": "https://sdabhi23.github.io",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.0",
-    "@fortawesome/free-brands-svg-icons": "^5.1.0",
-    "@fortawesome/free-regular-svg-icons": "^5.1.0",
-    "@fortawesome/free-solid-svg-icons": "^5.1.0",
-    "@fortawesome/react-fontawesome": "^0.1.0",
-    "formik": "^0.11.11",
-    "react": "^16.4.1",
-    "react-anchor-link-smooth-scroll": "^1.0.10",
-    "react-burger-menu": "^2.5.2",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "formik": "^2.2.6",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-modal": "^3.12.1",
+    "react-scripts": "3.4.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
-  "devDependencies": {
-    "gh-pages": "^1.2.0"
+  "devDependencies": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
