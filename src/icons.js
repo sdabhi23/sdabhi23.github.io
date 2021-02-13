@@ -20,6 +20,7 @@ import {
   faCss3Alt,
   faJs,
   faNodeJs,
+  faDev,
 } from "@fortawesome/free-brands-svg-icons";
 
 const contactProps = { color: "#e3e3e3" };
@@ -52,6 +53,9 @@ export const ContactMedium = () => (
 );
 export const ContactOrcid = () => (
   <FontAwesomeIcon icon={faOrcid} style={contactProps} size="3x" />
+);
+export const ContactDev = () => (
+  <FontAwesomeIcon icon={faDev} style={contactProps} size="3x" />
 );
 
 export const Java = () => (

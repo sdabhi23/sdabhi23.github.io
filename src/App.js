@@ -12,6 +12,7 @@ import {
   ContactLinkedIn,
   ContactMedium,
   ContactOrcid,
+  ContactDev,
 } from "./icons";
 
 class App extends Component {
@@ -73,6 +74,13 @@ class App extends Component {
               target="_blank"
               rel="noopener noreferrer">
               <ContactTwitter />
+            </a>
+            <a
+              className="about-social"
+              href="https://dev.to/sdabhi23"
+              target="_blank"
+              rel="noopener noreferrer">
+              <ContactDev />
             </a>
           </div>
         </div>
