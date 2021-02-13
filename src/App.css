@@ -1,80 +1,8 @@
-#header {
-  background-repeat: no-repeat;
-  background-size: cover;
+#portfolio {
+  /* background-repeat: no-repeat;
+  background-size: cover; */
   height: 100vh;
-  width: 30vw;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-#header-title {
-  font-family: "Markazi Text", cursive;
-  font-size: 4em;
-  margin: 0 0.25em;
-}
-
-#header-subtitle {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#header-subtitle > #subtext {
-  margin: 0.25em;
-  background-color: #4ec7f3;
-  padding: 0.25em;
-}
-
-#avatar {
-  height: 23vh;
-  border: solid white 2px;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-#about-text {
-  color: white;
-  padding: 0 50px;
-  margin: 1em 0 0 0;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.25em;
-}
-
-.about-social {
-  margin: 0 auto;
-}
-
-#acc-links {
-  display: flex;
-  width: 75%;
-  margin-top: 3em;
-}
-
-@media only screen and (max-width: 1200px) {
-  #header {
-    width: 50vw;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #header-title {
-    font-family: "Markazi Text", cursive;
-    font-size: 3em;
-    margin: 1rem;
-  }
-
-  #header-subtitle {
-    font-family: "Roboto", sans-serif;
-    margin: 0 10px;
-  }
-
-  #header {
-    width: 100vw;
-  }
+  flex-direction: row;
 }
