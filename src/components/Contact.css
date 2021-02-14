@@ -2,19 +2,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vh 0;
+  justify-content: center;
+  width: 20vw;
   font-family: "Roboto", sans-serif;
   color: white;
 }
 
 #contact-header {
   margin-top: 5vh;
-  height: 25vh;
+  width: 100%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
   #contact-header {
-    height: 20vh;
+    width: 75%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  #contact {
+    width: 100vw;
   }
 }
 
@@ -38,7 +45,7 @@ input {
   margin-top: 20px;
   padding: 0.5rem;
   font-size: 16px;
-  width: 100%;
+  width: 95%;
   display: block;
   line-height: 1.5;
   border-radius: 5px;
@@ -61,7 +68,7 @@ textarea {
   margin-top: 20px;
   padding: 0.5rem;
   font-size: 16px;
-  width: 100%;
+  width: 95%;
   display: block;
   line-height: 1.5;
   border-radius: 5px;
@@ -90,7 +97,7 @@ textarea:focus {
   color: #ef233c;
 }
 
-button {
+form > button {
   max-width: 150px;
   margin: 20px 0;
   padding: 12px 20px;
@@ -106,16 +113,16 @@ button {
   -webkit-appearance: none;
 }
 
-button + button {
+form > button + button {
   margin-left: 0.5rem;
 }
 
-button:disabled {
+form > button:disabled {
   opacity: 0.8;
   cursor: not-allowed !important;
 }
 
-button.outline {
+form > button.outline {
   background-color: #eee;
   border: 1px solid #aaa;
   color: #555;

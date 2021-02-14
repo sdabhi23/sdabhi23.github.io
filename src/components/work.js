@@ -16,7 +16,7 @@ export default class Work extends React.Component {
   render() {
     return (
       <div id="work">
-        <h1 id="work-title">
+        {/* <h1 id="work-title">
           Positions Held
           <hr
             style={{
@@ -266,7 +266,7 @@ export default class Work extends React.Component {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

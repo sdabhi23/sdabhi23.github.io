@@ -125,8 +125,18 @@ const ContactFormWrapper = withFormik({
     fetch(url, {
       method: "POST",
       body: formData,
+      headers: {
+        origin: "https://sdabhi23.github.io",
+        "x-origin-token": process.env.REACT_APP_ORIGIN_TOKEN,
+      },
     })
-      .then((res) => res.json())
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          throw new Error("Something went wrong");
+        }
+      })
       .catch((error) => {
         alert(
           "There's some error submitting the form. Please try again after some time!"
@@ -147,15 +157,15 @@ const ContactFormWrapper = withFormik({
   },
 })(ContactForm);
 
-export default class Contact extends React.Component {
-  render() {
-    return (
-      <div id="contact">
-        <img src={header} id="contact-header" alt="" />
-        <div id="contact-form">
-          <ContactFormWrapper />
-        </div>
+const Contact = () => {
+  return (
+    <div id="contact">
+      <img src={header} id="contact-header" alt="" />
+      <div id="contact-form">
+        <ContactFormWrapper />
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default Contact;
