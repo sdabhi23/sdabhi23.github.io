@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Markazi+Text&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Markazi+Text&display=swap");
 
 body {
   margin: 0;
@@ -8,18 +8,6 @@ body {
   scrollbar-track-color: white;
   scrollbar-color: #333333;
   scrollbar-width: thin;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: white;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #333333;
 }
 
 ::selection {
