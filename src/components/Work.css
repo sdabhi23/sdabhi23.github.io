@@ -3,4 +3,34 @@
   width: 45vw;
   display: flex;
   flex-direction: column;
+  color: white;
+}
+
+#past-employer {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+}
+
+#past-employer > img {
+  background-color: white;
+  width: 130px;
+  height: auto;
+  border-radius: 50%;
+  border: solid black 3px;
+}
+
+#past-employer > p {
+  margin: 10px 0;
+  width: 100%;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #work {
+    width: 100vw;
+    padding: 10px 0;
+    text-align: center;
+  }
 }
