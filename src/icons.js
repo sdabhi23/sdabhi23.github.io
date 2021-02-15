@@ -8,27 +8,31 @@ import {
   faGithub,
   faOrcid,
   faDev,
+  faGoodreads,
 } from "@fortawesome/free-brands-svg-icons";
 
 const contactProps = { color: "#e3e3e3" };
 
 export const ContactLinkedIn = () => (
-  <FontAwesomeIcon icon={faLinkedin} style={contactProps} size="3x" />
+  <FontAwesomeIcon icon={faLinkedin} style={contactProps} size="2x" />
 );
 export const ContactTwitter = () => (
-  <FontAwesomeIcon icon={faTwitter} style={contactProps} size="3x" />
+  <FontAwesomeIcon icon={faTwitter} style={contactProps} size="2x" />
 );
 export const ContactGithub = () => (
-  <FontAwesomeIcon icon={faGithub} style={contactProps} size="3x" />
+  <FontAwesomeIcon icon={faGithub} style={contactProps} size="2x" />
 );
 export const ContactMedium = () => (
-  <FontAwesomeIcon icon={faMedium} style={contactProps} size="3x" />
+  <FontAwesomeIcon icon={faMedium} style={contactProps} size="2x" />
 );
 export const ContactOrcid = () => (
-  <FontAwesomeIcon icon={faOrcid} style={contactProps} size="3x" />
+  <FontAwesomeIcon icon={faOrcid} style={contactProps} size="2x" />
 );
 export const ContactDev = () => (
-  <FontAwesomeIcon icon={faDev} style={contactProps} size="3x" />
+  <FontAwesomeIcon icon={faDev} style={contactProps} size="2x" />
+);
+export const ContactGoodReads = () => (
+  <FontAwesomeIcon icon={faGoodreads} style={contactProps} size="2x" />
 );
 
 export const LoadingIcon = () => (

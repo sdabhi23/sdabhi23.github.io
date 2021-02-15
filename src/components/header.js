@@ -9,6 +9,7 @@ import {
   ContactMedium,
   ContactOrcid,
   ContactDev,
+  ContactGoodReads,
 } from "../icons";
 
 const Header = () => {
@@ -73,6 +74,13 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer">
           <ContactDev />
+        </a>
+        <a
+          className="about-social"
+          href="https://dev.to/sdabhi23"
+          target="_blank"
+          rel="noopener noreferrer">
+          <ContactGoodReads />
         </a>
       </div>
     </div>
