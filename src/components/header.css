@@ -54,12 +54,6 @@
   margin: 1em 0 1em 0;
 }
 
-@media only screen and (max-width: 1200px) {
-  #header {
-    width: 50vw;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   #header {
     min-height: 100vh;
