@@ -6,6 +6,32 @@
   color: white;
 }
 
+#employer {
+  display: flex;
+}
+
+#employer > img {
+  background-color: white;
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  border: solid goldenrod 5px;
+}
+
+#employer > div {
+  margin: 0 0 0 20px;
+}
+
+#employer > div > h2 {
+  margin: 0;
+  text-decoration: underline;
+}
+
+#employer > div > p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
 #past-employer {
   display: inline-block;
   margin: 0 10px;
@@ -14,10 +40,10 @@
 
 #past-employer > img {
   background-color: white;
-  width: 130px;
+  width: 120px;
   height: auto;
   border-radius: 50%;
-  border: solid black 3px;
+  border: solid #b1560f 5px;
 }
 
 #past-employer > p {
@@ -32,5 +58,15 @@
     width: 100vw;
     padding: 10px 0;
     text-align: center;
+  }
+
+  #employer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #employer > div {
+    margin: 10px 0 0 0;
+    padding: 0 10px 10px 10px;
   }
 }
