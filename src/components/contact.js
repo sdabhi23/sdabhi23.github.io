@@ -1,6 +1,6 @@
 import React from "react";
 import header from "../img/contact_header.png";
-import "./Contact.css";
+import "./contact.css";
 import { withFormik } from "formik";
 import { LoadingIcon } from "../icons";
 
