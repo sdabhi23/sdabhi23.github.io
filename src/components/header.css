@@ -56,8 +56,6 @@
 
 @media only screen and (max-width: 600px) {
   #header {
-    min-height: 100vh;
-    padding-top: 20px;
     width: 100vw;
   }
 
