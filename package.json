@@ -1,24 +1,40 @@
 {
   "name": "shrey-dabhi-portfolio",
-  "version": "0.1.0",
   "private": true,
+  "version": "0.1.0",
   "homepage": "https://sdabhi23.github.io",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
   "dependencies": {
+    "@fontsource/markazi-text": "^4.2.1",
+    "@fontsource/roboto": "^4.2.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@material-ui/core": "^4.11.3",
     "formik": "^2.2.6",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-modal": "^3.12.1",
-    "react-scripts": "3.4.4"
+    "gatsby": "^2.26.1",
+    "gatsby-image": "^2.11.0",
+    "gatsby-plugin-material-ui": "^2.1.10",
+    "gatsby-plugin-sharp": "^2.14.1",
+    "gatsby-source-dev": "^0.1.4",
+    "gatsby-source-filesystem": "^2.11.0",
+    "gatsby-source-rss-feed": "^1.2.2",
+    "gatsby-transformer-sharp": "^2.12.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+  "devDependencies": {
+    "prettier": "2.2.1"
   },
-  "devDependencies": {},
   "browserslist": {
     "production": [
       ">0.2%",

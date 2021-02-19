@@ -1,6 +1,6 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSpinner } from "@fortawesome/free-solid-svg-icons"
 import {
   faLinkedin,
   faTwitter,
@@ -9,32 +9,32 @@ import {
   faOrcid,
   faDev,
   faGoodreads,
-} from "@fortawesome/free-brands-svg-icons";
+} from "@fortawesome/free-brands-svg-icons"
 
-const contactProps = { color: "#e3e3e3" };
+const contactProps = { color: "#e3e3e3", fontSize: "2.5em" }
 
 export const ContactLinkedIn = () => (
-  <FontAwesomeIcon icon={faLinkedin} style={contactProps} size="2x" />
-);
+  <FontAwesomeIcon icon={faLinkedin} style={contactProps} />
+)
 export const ContactTwitter = () => (
-  <FontAwesomeIcon icon={faTwitter} style={contactProps} size="2x" />
-);
+  <FontAwesomeIcon icon={faTwitter} style={contactProps} />
+)
 export const ContactGithub = () => (
-  <FontAwesomeIcon icon={faGithub} style={contactProps} size="2x" />
-);
+  <FontAwesomeIcon icon={faGithub} style={contactProps} />
+)
 export const ContactMedium = () => (
-  <FontAwesomeIcon icon={faMedium} style={contactProps} size="2x" />
-);
+  <FontAwesomeIcon icon={faMedium} style={contactProps} />
+)
 export const ContactOrcid = () => (
-  <FontAwesomeIcon icon={faOrcid} style={contactProps} size="2x" />
-);
+  <FontAwesomeIcon icon={faOrcid} style={contactProps} />
+)
 export const ContactDev = () => (
-  <FontAwesomeIcon icon={faDev} style={contactProps} size="2x" />
-);
+  <FontAwesomeIcon icon={faDev} style={contactProps} />
+)
 export const ContactGoodReads = () => (
-  <FontAwesomeIcon icon={faGoodreads} style={contactProps} size="2x" />
-);
+  <FontAwesomeIcon icon={faGoodreads} style={contactProps} />
+)
 
 export const LoadingIcon = () => (
   <FontAwesomeIcon icon={faSpinner} style={{ fontSize: "20" }} spin />
-);
+)
