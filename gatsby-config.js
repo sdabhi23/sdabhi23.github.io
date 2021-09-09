@@ -8,9 +8,9 @@ module.exports = {
   pathPrefix: "/portfolio-next",
   plugins: [
     {
-      resolve: `gatsby-source-dev`,
+      resolve: `gatsby-source-mydev`,
       options: {
-        username: `sdabhi23`,
+        apiKey: `XopUgae9ve2ZVQJNnnx697Qj`,
       },
     },
     {
@@ -29,12 +29,12 @@ module.exports = {
         path: `${__dirname}/src/img`,
       },
     },
-    {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
-        url: `https://medium.com/feed/@sdabhi23`,
-        name: `Medium`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-rss-feed`,
+    //   options: {
+    //     url: `https://medium.com/feed/@sdabhi23`,
+    //     name: `Medium`,
+    //   },
+    // },
   ],
 }

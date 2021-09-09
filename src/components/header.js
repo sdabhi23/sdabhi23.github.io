@@ -81,21 +81,23 @@ const HeaderSkeleton = ({ data }) => {
       <p className={classes.title}>Shrey Dabhi</p>
       <p className={classes.subtitle}>
         <li key="bd">
-          <Chip label="Big Data" color="" className={classes.chip} />
+          <Chip label="Data & Analytics" color="" className={classes.chip} />
         </li>
         <li key="fs">
           <Chip label="Full Stack" color="" className={classes.chip} />
         </li>
         <li key="ml">
-          <Chip label="Machine Learning" color="" className={classes.chip} />
+          <Chip label="ML & MLOps" color="" className={classes.chip} />
         </li>
-        {/* Big Data | Full Stack | Machine Learning */}
       </p>
       <p className={classes.intro}>
-        A passionate self-taught developer, with a knack for creating engaging
-        user experiences and performant systems. Able to effectively leverage
-        recent and emerging technologies to achieve the required
-        functionalities. I enjoy learning new skills, improving old ones and{" "}
+        A passionate developer, with a knack for creating performant systems and
+        engaging experiences. Able to effectively leverage recent and emerging
+        technologies to achieve the required outcomes.
+      </p>{" "}
+      <p className={classes.intro}>
+        {" "}
+        I enjoy learning new skills, improving old ones and{" "}
         <span role="img" aria-label="heart">
           ❤️️
         </span>{" "}

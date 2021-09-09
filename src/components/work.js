@@ -81,22 +81,22 @@ const WorkSkeleton = ({ data }) => {
               <Grid item xs={12} md={4}>
                 <Img
                   className={classes.currentEmployerLogo}
-                  fluid={data.allFile.nodes[3].childImageSharp.fluid}
-                  alt="Optum Logo"
+                  fluid={data.allFile.nodes[1].childImageSharp.fluid}
+                  alt="DoctorC Logo"
                 />
               </Grid>
               <Grid item xs={12} md={8}>
                 <div style={{ padding: "0.5em" }}>
                   <Typography variant="h5">Software Engineer</Typography>
-                  <Typography variant="h6">Optum</Typography>
+                  <Typography variant="h6">DoctorC</Typography>
                   <Typography variant="p">
-                    Working on migration of legacy mainframe applications to big
-                    data environments
+                    Building out systems for managing, analysing and monitoring
+                    data and it's quality
                   </Typography>
                   <br />
                   <br />
                   <Typography variant="p">
-                    <b>Tech Stack:</b> Hadoop, Hive, Spark, Scala, Python
+                    <b>Tech Stack:</b> PostgreSQL, DBT, Django, React
                   </Typography>
                 </div>
               </Grid>
@@ -111,6 +111,15 @@ const WorkSkeleton = ({ data }) => {
             <Grid item>
               <Img
                 className={classes.logo}
+                fluid={data.allFile.nodes[4].childImageSharp.fluid}
+                alt="Optum Logo"
+              />
+
+              <Typography variant="h6">Optum</Typography>
+            </Grid>
+            <Grid item>
+              <Img
+                className={classes.logo}
                 fluid={data.allFile.nodes[0].childImageSharp.fluid}
                 alt="Bosch Logo"
               />
@@ -120,7 +129,7 @@ const WorkSkeleton = ({ data }) => {
             <Grid item>
               <Img
                 className={classes.logo}
-                fluid={data.allFile.nodes[1].childImageSharp.fluid}
+                fluid={data.allFile.nodes[2].childImageSharp.fluid}
                 alt="Hasura Logo"
               />
               <Typography variant="h6">Hasura</Typography>
@@ -129,7 +138,7 @@ const WorkSkeleton = ({ data }) => {
             <Grid item>
               <Img
                 className={classes.logo}
-                fluid={data.allFile.nodes[2].childImageSharp.fluid}
+                fluid={data.allFile.nodes[3].childImageSharp.fluid}
                 alt="Let's Nurture Logo"
               />
 
@@ -139,7 +148,7 @@ const WorkSkeleton = ({ data }) => {
             <Grid item>
               <Img
                 className={classes.logo}
-                fluid={data.allFile.nodes[4].childImageSharp.fluid}
+                fluid={data.allFile.nodes[5].childImageSharp.fluid}
                 alt="Taaraka Logo"
               />
 
