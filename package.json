@@ -5,7 +5,7 @@
   "homepage": "https://sdabhi23.github.io",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -13,27 +13,26 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@fontsource/markazi-text": "^4.2.1",
-    "@fontsource/roboto": "^4.2.1",
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@material-ui/core": "^4.11.3",
-    "formik": "^2.2.6",
-    "gatsby": "^2.26.1",
-    "gatsby-image": "^2.11.0",
-    "gatsby-plugin-material-ui": "^2.1.10",
-    "gatsby-plugin-sharp": "^2.14.1",
-    "gatsby-source-dev": "^0.1.4",
-    "gatsby-source-filesystem": "^2.11.0",
-    "gatsby-source-rss-feed": "^1.2.2",
-    "gatsby-transformer-sharp": "^2.12.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "@fontsource/markazi-text": "^4.5.0",
+    "@fontsource/roboto": "^4.5.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "@material-ui/core": "^4.12.3",
+    "formik": "^2.2.9",
+    "gatsby": "^3.1.11",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-material-ui": "^3.0.1",
+    "gatsby-plugin-sharp": "^3.11.0",
+    "gatsby-source-mydev": "^1.0.2",
+    "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-transformer-sharp": "^3.11.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "prettier": "2.3.2"
   },
   "browserslist": {
     "production": [
