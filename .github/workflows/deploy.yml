@@ -24,3 +24,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
         publish_branch: master
+        force_orphan: true
+        allow_empty_commit: true
