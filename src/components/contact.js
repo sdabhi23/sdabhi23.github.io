@@ -135,7 +135,7 @@ const ContactFormWrapper = withFormik({
       body: formData,
       headers: {
         origin: "https://sdabhi23.github.io",
-        "x-origin-token": process.env.REACT_APP_ORIGIN_TOKEN,
+        "x-origin-token": process.env.GATSBY_ORIGIN_TOKEN,
       },
     })
       .then(res => {
