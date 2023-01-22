@@ -1,7 +1,7 @@
 {
   "name": "shrey-dabhi-portfolio",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://shreydabhi.dev",
   "devDependencies": {
     "http-server": "^14.1.1",
@@ -21,10 +21,10 @@
     "react-dom": "^18.2.0",
     "react-router": "^6.7.0",
     "react-router-dom": "^6.7.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.15",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "webpack": "^5.75.0"
   },
   "scripts": {
