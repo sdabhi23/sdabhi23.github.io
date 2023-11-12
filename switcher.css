@@ -1,0 +1,81 @@
+/* the interesting bit */
+
+#theme-switch-container {
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  #theme-switch-container {
+    justify-content: start;
+  }
+}
+
+.label {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.switch,
+.input:checked + .label .left,
+.input:not(:checked) + .label .right {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+/* most of the stuff below is the same as the W3Schools stuff,
+     but modified a bit to reflect changed HTML structure */
+
+.input {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 10rem;
+  height: 34px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-fg);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "DARK";
+  height: 26px;
+  width: 5rem;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--color-bg);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  line-height: 26px;
+  text-align: center;
+}
+
+input:checked + .label .slider:before {
+  -webkit-transform: translateX(4.5rem);
+  -ms-transform: translateX(4.5rem);
+  transform: translateX(4.5rem);
+  content: "LIGHT";
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 34px;
+}
