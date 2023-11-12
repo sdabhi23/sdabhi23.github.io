@@ -1,11 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Shrey's Portfolio
-</h1>
+# Shrey's Website
 
-This site was created with the Gatsby hello-world boilerplate. You can access the site on <sdabhi23.github.io>.
+This page has been through mutliple iterations and frameowrks. Somehow I ended up coming back to the basics with raw HTML and CSS. I hope you like it, because I definitely do!🤪
