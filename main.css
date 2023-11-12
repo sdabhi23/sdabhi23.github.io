@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --box-shadow-preset-1: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+body.light {
+  --color-bg: #e6e6e6;
+  --color-fg: #3b3b3b;
+}
+
+body.dark {
+  --color-bg: #3b3b3b;
+  --color-fg: #e3e3e3;
+}
+
+.font-hso {
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 2rem 8rem;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+/* header elements */
+
+#site-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#site-header-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-size: 1.3em;
+}
+
+#site-header-menu a {
+  color: var(--color-fg);
+  cursor: pointer;
+  padding: 0.5rem;
+  border: transparent solid 2px;
+  border-radius: 7px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+#site-header-menu a:hover {
+  border-color: var(--color-fg);
+  /* color: #e07849; */
+}
+
+/* main body elements */
+
+main {
+  width: 60%;
+  padding-top: 10rem;
+}
+
+#role-chip {
+  display: none;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  color: #e07849;
+  padding: 1rem;
+  box-shadow: var(--box-shadow-preset-1);
+  border-radius: 7px;
+  font-size: 1.3em;
+  background-color: var(--color-fg);
+  max-width: 12rem;
+  text-align: center;
+}
+
+#dev-name {
+  font-size: 5em;
+  margin-bottom: 1.5rem;
+}
+
+#summary {
+  font-size: 1.25em;
+}
+
+#social-links {
+  margin-top: 1.5rem;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#social-links a {
+  background-color: var(--color-fg);
+  color: var(--color-bg);
+  box-shadow: var(--box-shadow-preset-1);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: transparent solid 2px;
+  transition: all 0.5s ease;
+}
+
+#social-links a:hover {
+  border-color: var(--color-bg);
+}
+
+/* past companies list */
+
+#past-companies {
+  margin-top: 2rem;
+  /* padding: 1rem; */
+  /* border-radius: 7px; */
+}
+
+#company-logos {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#past-companies img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px var(--color-fg) solid;
+  object-fit: contain;
+  box-shadow: var(--box-shadow-preset-1);
+  background-color: #fff;
+}
+
+/* contact form elements */
+
+/* #contact-form-modal {
+    background-color: rgba(227, 227, 227, 0.5);
+    box-shadow: var(--box-shadow-preset-1);
+    backdrop-filter: blur(2px);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-form-modal div {
+    width: 50vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+#contact-form-modal div form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem;
+} */
+
+@media only screen and (max-width: 1000px) {
+  body {
+    margin: 0;
+    padding: 2rem;
+  }
+
+  main {
+    width: 100%;
+    padding-top: 5rem;
+  }
+
+  #word-mark {
+    display: none;
+  }
+
+  #site-header-menu {
+    gap: 1rem;
+    font-size: 1em;
+  }
+
+  #site-header-menu span {
+    border-color: var(--color-fg);
+  }
+}

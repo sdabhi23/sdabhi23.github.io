@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./reset.css" rel="stylesheet" media="screen" />
+    <link href="./main.css" rel="stylesheet" media="screen" />
+    <link href="./switcher.css" rel="stylesheet" media="screen" />
+    <link href="./fontawesome-6.4.2/fontawesome.min.css" rel="stylesheet" media="screen" />
+    <link href="./fontawesome-6.4.2/brands.min.css" rel="stylesheet" media="screen" />
+  </head>
+  <body class="font-roboto">
+    <script>
+      const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+      const themeOptions = {
+        dark: "vs-dark",
+        light: "vs-light",
+      };
+
+      const setPageTheme = (themeConstant) => {
+        let existingClass = document.body.className;
+        existingClass = existingClass.replace(" light", "");
+        existingClass = existingClass.replace(" dark", "");
+        if (themeConstant === themeOptions.light) {
+          document.body.className = existingClass + " light";
+        } else if (themeConstant === themeOptions.dark) {
+          document.body.className = existingClass + " dark";
+        }
+      };
+
+      window.onload = (event) => {
+        console.log("page is fully loaded");
+        const checkBox = document.getElementById("theme-toggle");
+        let editorTheme;
+
+        if (darkThemeMq.matches) {
+          editorTheme = themeOptions.dark;
+          checkBox.checked = false;
+        } else {
+          editorTheme = themeOptions.light;
+          checkBox.checked = true;
+        }
+        setPageTheme(editorTheme);
+      };
+
+      darkThemeMq.addEventListener("change", (e) => {
+        let theme;
+
+        if (e.matches) {
+          theme = themeOptions.dark;
+          checkBox.checked = false;
+        } else {
+          theme = themeOptions.light;
+          checkBox.checked = true;
+        }
+        setPageTheme(editorTheme);
+      });
+
+      function handleThemeToggle() {
+        const checkBox = document.getElementById("theme-toggle");
+
+        if (checkBox.checked == true) {
+          setPageTheme(themeOptions.light);
+        } else {
+          setPageTheme(themeOptions.dark);
+        }
+      }
+    </script>
+
+    <header>
+      <div id="site-header">
+        <h1 class="font-hso" id="word-mark">Shrey.</h1>
+
+        <div id="site-header-menu">
+          <a href="./resume_shrey_dabhi.pdf">Download Resume</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <div id="theme-switch-container">
+      <input
+        class="input"
+        id="theme-toggle"
+        type="checkbox"
+        onclick="handleThemeToggle()"
+      />
+      <label class="label" for="theme-toggle">
+        <div class="switch">
+          <span class="slider round font-hso"></span>
+        </div>
+      </label>
+    </div>
+
+    <main>
+      <div id="role-chip">
+        <span>Software Engineer</span>
+      </div>
+      <div id="dev-name" class="font-hso">Shrey Dabhi</div>
+      <div id="summary">
+        I am a passionate self-taught developer, with a knack for creating
+        engaging user experiences and performant systems. I enjoy building out
+        products, thinking around the complex tech problems involved. I love to
+        experiment with emerging technologies as well.
+      </div>
+      <div id="social-links">
+        <a
+          class="fab fa-github"
+          href="https://github.com/sdabhi23"
+          aria-label="Link to Shrey's GitHub profile"
+        ></a>
+        <a
+          class="fab fa-linkedin-in"
+          href="https://www.linkedin.com/in/sdabhi23/"
+          aria-label="Link to Shrey's LinkedIn profile"
+        ></a>
+        <a
+          class="fab fa-orcid"
+          href="https://orcid.org/0000-0002-4364-9892"
+          aria-label="Link to Shrey's ORCID profile"
+        ></a>
+        <a
+          class="fab fa-twitter"
+          href="https://twitter.com/sdabhi23"
+          aria-label="Link to Shrey's Twitter profile"
+        ></a>
+      </div>
+      <div id="past-companies">
+        <h3 class="font-hso">Worked at</h3>
+        <div id="company-logos">
+          <img src="https://logo.clearbit.com/doctorc.in" alt="DoctorC Logo" />
+          <img
+            src="https://logo.clearbit.com/optum.in"
+            alt="Optum India Logo"
+          />
+          <img
+            src="https://logo.clearbit.com/bosch.in"
+            alt="Bosch India Logo"
+          />
+          <img src="https://logo.clearbit.com/taaraka.com" alt="Taaraka Logo" />
+          <img
+            src="https://logo.clearbit.com/letsnurture.com"
+            alt="Let's Nurture Logo"
+          />
+          <img src="https://logo.clearbit.com/hasura.io" alt="Hasura Logo" />
+        </div>
+      </div>
+    </main>
+    <!-- <div id="contact-form-modal">
+      <div>
+        <div></div>
+        <form>
+          <input
+            type="text"
+            class="form-control"
+            id="sender-name"
+            placeholder="Enter name"
+          />
+          <input
+            type="email"
+            class="form-control"
+            id="sender-email"
+            placeholder="Enter email"
+          />
+          <input
+            type="text"
+            class="form-control"
+            id="msg-subject"
+            placeholder="Subject"
+          />
+          <input
+            type="textarea"
+            class="form-control"
+            id="msg-content"
+            placeholder="Your message"
+          />
+        </form>
+      </div>
+    </div> -->
+  </body>
+</html>
