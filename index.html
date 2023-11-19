@@ -49,56 +49,67 @@
     </div>
 
     <main>
-      <div id="role-chip">
-        <span>Software Engineer</span>
+      <div id="left-pane">
+        <div id="dev-name" class="font-hso">Shrey Dabhi</div>
+        <div id="summary">
+          I am a passionate self-taught developer, with a knack for creating
+          engaging user experiences and performant systems. I enjoy building out
+          products, thinking around the complex tech problems involved. I love
+          to experiment with emerging technologies as well.
+        </div>
+        <div id="social-links">
+          <a
+            class="fab fa-github"
+            href="https://github.com/sdabhi23"
+            aria-label="Link to Shrey's GitHub profile"
+          ></a>
+          <a
+            class="fab fa-linkedin-in"
+            href="https://www.linkedin.com/in/sdabhi23/"
+            aria-label="Link to Shrey's LinkedIn profile"
+          ></a>
+          <a
+            class="fab fa-orcid"
+            href="https://orcid.org/0000-0002-4364-9892"
+            aria-label="Link to Shrey's ORCID profile"
+          ></a>
+          <a
+            class="fab fa-twitter"
+            href="https://twitter.com/sdabhi23"
+            aria-label="Link to Shrey's Twitter profile"
+          ></a>
+        </div>
+        <div id="past-companies">
+          <h3 class="font-hso">Worked at</h3>
+          <div id="company-logos">
+            <img
+              src="https://logo.clearbit.com/doctorc.in"
+              alt="DoctorC Logo"
+            />
+            <img
+              src="https://logo.clearbit.com/optum.in"
+              alt="Optum India Logo"
+            />
+            <img
+              src="https://logo.clearbit.com/bosch.in"
+              alt="Bosch India Logo"
+            />
+            <img
+              src="https://logo.clearbit.com/taaraka.com"
+              alt="Taaraka Logo"
+            />
+            <img
+              src="https://logo.clearbit.com/letsnurture.com"
+              alt="Let's Nurture Logo"
+            />
+            <img src="https://logo.clearbit.com/hasura.io" alt="Hasura Logo" />
+          </div>
+        </div>
       </div>
-      <div id="dev-name" class="font-hso">Shrey Dabhi</div>
-      <div id="summary">
-        I am a passionate self-taught developer, with a knack for creating
-        engaging user experiences and performant systems. I enjoy building out
-        products, thinking around the complex tech problems involved. I love to
-        experiment with emerging technologies as well.
-      </div>
-      <div id="social-links">
-        <a
-          class="fab fa-github"
-          href="https://github.com/sdabhi23"
-          aria-label="Link to Shrey's GitHub profile"
-        ></a>
-        <a
-          class="fab fa-linkedin-in"
-          href="https://www.linkedin.com/in/sdabhi23/"
-          aria-label="Link to Shrey's LinkedIn profile"
-        ></a>
-        <a
-          class="fab fa-orcid"
-          href="https://orcid.org/0000-0002-4364-9892"
-          aria-label="Link to Shrey's ORCID profile"
-        ></a>
-        <a
-          class="fab fa-twitter"
-          href="https://twitter.com/sdabhi23"
-          aria-label="Link to Shrey's Twitter profile"
-        ></a>
-      </div>
-      <div id="past-companies">
-        <h3 class="font-hso">Worked at</h3>
-        <div id="company-logos">
-          <img src="https://logo.clearbit.com/doctorc.in" alt="DoctorC Logo" />
-          <img
-            src="https://logo.clearbit.com/optum.in"
-            alt="Optum India Logo"
-          />
-          <img
-            src="https://logo.clearbit.com/bosch.in"
-            alt="Bosch India Logo"
-          />
-          <img src="https://logo.clearbit.com/taaraka.com" alt="Taaraka Logo" />
-          <img
-            src="https://logo.clearbit.com/letsnurture.com"
-            alt="Let's Nurture Logo"
-          />
-          <img src="https://logo.clearbit.com/hasura.io" alt="Hasura Logo" />
+      <div id="right-pane">
+        <div id="github-projects-container">
+          <h3 class="font-hso">Some notable GitHub projects</h3>
+          <div id="github-projects"></div>
         </div>
       </div>
     </main>
@@ -133,5 +144,13 @@
         </form>
       </div>
     </div> -->
+    <footer>
+      <p id="footer-info">
+        This website is hosted on GitHub pages and uses some custom APIs
+        hosted on AWS lambda for the GitHub repository list and the contact
+        form!
+      </p>
+    </footer>
+    <script src="./github_projects.js"></script>
   </body>
 </html>
