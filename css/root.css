@@ -3,6 +3,7 @@
 :root {
   --box-shadow-preset-1: rgba(0, 0, 0, 0.19) 0px 10px 20px,
     rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --border-radius-value: 7px;
 }
 
 body.light {
@@ -50,35 +51,25 @@ body {
   cursor: pointer;
   padding: 0.5rem;
   border: transparent solid 2px;
-  border-radius: 7px;
+  border-radius: var(--border-radius-value);
   transition: all 0.5s ease;
   text-decoration: none;
 }
 
 #site-header-menu a:hover {
   border-color: var(--color-fg);
-  /* color: #e07849; */
 }
 
 /* main body elements */
 
 main {
-  width: 60%;
-  padding-top: 10rem;
+  display: flex;
+  padding-top: 5rem;
+  gap: 5rem;
 }
 
-#role-chip {
-  display: none;
-  margin-top: 10rem;
-  margin-bottom: 2rem;
-  color: #e07849;
-  padding: 1rem;
-  box-shadow: var(--box-shadow-preset-1);
-  border-radius: 7px;
-  font-size: 1.3em;
-  background-color: var(--color-fg);
-  max-width: 12rem;
-  text-align: center;
+#left-pane {
+  width: 60%;
 }
 
 #dev-name {
@@ -88,6 +79,7 @@ main {
 
 #summary {
   font-size: 1.25em;
+  line-height: 1.3;
 }
 
 #social-links {
@@ -104,7 +96,7 @@ main {
   box-shadow: var(--box-shadow-preset-1);
   width: 3rem;
   height: 3rem;
-  border-radius: 7px;
+  border-radius: var(--border-radius-value);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,8 +113,6 @@ main {
 
 #past-companies {
   margin-top: 2rem;
-  /* padding: 1rem; */
-  /* border-radius: 7px; */
 }
 
 #company-logos {
@@ -141,6 +131,25 @@ main {
   object-fit: contain;
   box-shadow: var(--box-shadow-preset-1);
   background-color: #fff;
+}
+
+#right-pane {
+  width: 40%;
+}
+
+/* github project elements */
+
+#github-projects {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.github-card-img {
+  max-width: 25rem;
+  border-radius: var(--border-radius-value);
+  box-shadow: var(--box-shadow-preset-1);
 }
 
 /* contact form elements */
@@ -175,6 +184,17 @@ main {
     margin: 5rem;
 } */
 
+/* footer elements */
+footer {
+  position: absolute;
+  bottom: 2rem;
+  padding-top: 2rem;
+}
+
+#footer-info {
+  font-size: 0.8em;
+}
+
 @media only screen and (max-width: 1000px) {
   body {
     margin: 0;
@@ -182,8 +202,17 @@ main {
   }
 
   main {
-    width: 100%;
     padding-top: 5rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #left-pane {
+    width: 100%;
+  }
+
+  #right-pane {
+    width: 100%;
   }
 
   #word-mark {
@@ -197,5 +226,18 @@ main {
 
   #site-header-menu span {
     border-color: var(--color-fg);
+  }
+
+  .github-card-img {
+    width: 83vw;
+  }
+
+  footer {
+    position: inherit;
+  }
+
+  #footer-info {
+    font-size: 0.9em;
+    line-height: 1.3;
   }
 }
