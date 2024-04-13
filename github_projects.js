@@ -1,4 +1,4 @@
-fetch("https://portfolio-api.shreydabhi.dev/github_repos/", {
+fetch("https://portfolio-api.shreydabhi.dev/github_repos/?repos=bsedata,monaco-json-viewer,streaming-data-pipeline,kafka-data-pipeline", {
   method: "GET",
 })
   .then((response) => response.json())
