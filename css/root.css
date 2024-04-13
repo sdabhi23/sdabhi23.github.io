@@ -142,12 +142,13 @@ main {
 #github-projects {
   margin-top: 1rem;
   display: flex;
-  gap: 2rem;
-  flex-direction: column;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .github-card-img {
-  max-width: 25rem;
+  max-width: 16rem;
   border-radius: var(--border-radius-value);
   box-shadow: var(--box-shadow-preset-1);
 }
