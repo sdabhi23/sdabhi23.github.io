@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /furo/
+Disallow: /q-cloud-programming/
+Disallow: /FCC-Projects/
+Disallow: /landing-page/
