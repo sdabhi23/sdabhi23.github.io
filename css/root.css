@@ -124,13 +124,14 @@ main {
 }
 
 #past-companies img {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  border: 2px var(--color-fg) solid;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: 1px var(--color-fg) solid;
   object-fit: contain;
   box-shadow: var(--box-shadow-preset-1);
   background-color: #fff;
+  padding: 0 1rem;
 }
 
 #right-pane {
@@ -151,49 +152,6 @@ main {
   max-width: 16rem;
   border-radius: var(--border-radius-value);
   box-shadow: var(--box-shadow-preset-1);
-}
-
-/* contact form elements */
-
-/* #contact-form-modal {
-    background-color: rgba(227, 227, 227, 0.5);
-    box-shadow: var(--box-shadow-preset-1);
-    backdrop-filter: blur(2px);
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact-form-modal div {
-    width: 50vw;
-    height: 70vh;
-    background-color: white;
-    border-radius: 1rem;
-}
-
-#contact-form-modal div form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 5rem;
-} */
-
-/* footer elements */
-footer {
-  position: absolute;
-  bottom: 2rem;
-  padding-top: 2rem;
-}
-
-#footer-info {
-  font-size: 0.8em;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -231,14 +189,5 @@ footer {
 
   .github-card-img {
     width: 83vw;
-  }
-
-  footer {
-    position: inherit;
-  }
-
-  #footer-info {
-    font-size: 0.9em;
-    line-height: 1.3;
   }
 }
