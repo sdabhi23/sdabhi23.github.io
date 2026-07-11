@@ -127,7 +127,6 @@ main {
   width: 6rem;
   height: 3rem;
   border-radius: 1.5rem;
-  border: 1px var(--color-fg) solid;
   object-fit: contain;
   box-shadow: var(--box-shadow-preset-1);
   background-color: #fff;
