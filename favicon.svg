@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="6.5" fill="#f3eee3" stroke="#d9d0bf" stroke-width="1.5"/>
+  <rect x="7" y="7" width="3.2" height="18" rx="1.2" fill="#8c2f2f"/>
+  <text x="14" y="19" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-weight="700" font-size="11.5" fill="#2a2420">SD</text>
+</svg>
