@@ -1,6 +1,7 @@
 {
   "name": "worker",
   "private": true,
+  "packageManager": "pnpm@11.15.1",
   "scripts": {
     "dev": "wrangler dev --test-scheduled",
     "deploy": "wrangler deploy"
