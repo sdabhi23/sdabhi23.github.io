@@ -5,7 +5,9 @@
   "workers_dev": false,
   "preview_urls": false,
   "triggers": {
-    "crons": ["0 0 * * MON"]
+    "crons": [
+      "0 0 * * MON"
+    ]
   },
   "r2_buckets": [
     {
@@ -23,13 +25,23 @@
   "rules": [
     {
       "type": "Data",
-      "globs": ["**/*.ttf"],
+      "globs": [
+        "**/*.ttf"
+      ],
       "fallthrough": true
     },
     {
       "type": "CompiledWasm",
-      "globs": ["**/*.wasm"],
+      "globs": [
+        "**/*.wasm"
+      ],
       "fallthrough": true
     }
-  ]
+  ],
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    }
+  }
 }
