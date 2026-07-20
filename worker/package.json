@@ -1,0 +1,16 @@
+{
+  "name": "worker",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev --test-scheduled",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.110.0"
+  },
+  "dependencies": {
+    "@cf-wasm/resvg": "^0.3.4",
+    "satori": "^0.26.0",
+    "satori-html": "^0.3.2"
+  }
+}

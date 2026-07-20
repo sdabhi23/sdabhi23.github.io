@@ -1,0 +1,33 @@
+{
+  "name": "shreydabhi-og-cron",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-20",
+  "triggers": {
+    "crons": ["0 0 * * 0"]
+  },
+  "r2_buckets": [
+    {
+      "binding": "BUCKET",
+      "bucket_name": "shreydabhi-og"
+    }
+  ],
+  "secrets_store_secrets": [
+    {
+      "binding": "GITHUB_PAT",
+      "store_id": "be92bb41d6664a669849f5333184a905",
+      "secret_name": "GITHUB_PAT"
+    }
+  ],
+  "rules": [
+    {
+      "type": "Data",
+      "globs": ["**/*.ttf"],
+      "fallthrough": true
+    },
+    {
+      "type": "CompiledWasm",
+      "globs": ["**/*.wasm"],
+      "fallthrough": true
+    }
+  ]
+}
