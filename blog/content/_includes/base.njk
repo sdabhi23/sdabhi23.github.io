@@ -20,15 +20,7 @@
 </head>
 
 <body class="font-body">
-  <header class="site-header">
-    <div class="site-header-inner">
-      <a class="site-logo font-header" href="/">Shrey Dabhi</a>
-      <nav class="site-nav">
-        <a href="/blog/" aria-current="page">Blog</a>
-        <a href="/resume_shrey_dabhi.pdf">Resume</a>
-      </nav>
-    </div>
-  </header>
+  {% include "header.njk" %}
   <main class="blog-main">
     {{ content | safe }}
   </main>

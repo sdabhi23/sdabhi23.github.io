@@ -40,6 +40,9 @@ h6 {
 
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-bg);
   color: var(--color-fg);
 }
@@ -93,13 +96,10 @@ body {
 
 /* site footer */
 
-.site-footer {
-  border-top: 1px solid var(--rule);
-  padding: 2rem;
-}
-
 .site-footer-inner {
+  border-top: 1px solid var(--rule);
   max-width: var(--content-max-width);
+  padding: 2rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -136,6 +136,7 @@ body {
 /* shared page body layout */
 
 main {
+  flex: 1 0 auto;
   max-width: var(--content-max-width);
   margin: 0 auto;
   display: flex;
