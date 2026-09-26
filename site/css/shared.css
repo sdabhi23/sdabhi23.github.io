@@ -137,7 +137,7 @@ body {
 
 main {
   flex: 1 0 auto;
-  max-width: var(--content-max-width);
+  width: var(--content-max-width);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -159,5 +159,6 @@ main {
 
   main {
     gap: 2rem;
+    width: unset;
   }
 }
