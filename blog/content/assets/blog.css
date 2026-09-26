@@ -1,0 +1,166 @@
+/* Blog-only layout rules. Fonts and color tokens (--paper, --ink, --oxblood, etc.)
+   come from the portfolio's own /css/root.css, loaded before this file. */
+
+.blog-main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem;
+}
+
+.blog-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.blog-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+
+.blog-nav a:hover {
+  color: var(--oxblood);
+  border-bottom-color: var(--oxblood);
+}
+
+.blog-intro {
+  color: var(--ink-muted);
+  font-size: 1.1em;
+  margin-bottom: 2.5rem;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.post-list-item:first-child {
+  padding-top: 0;
+}
+
+.post-list-item a {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.3em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.post-list-item a:hover {
+  color: var(--oxblood);
+}
+
+.post-list-item time {
+  display: block;
+  color: var(--ink-faint);
+  font-size: 0.9em;
+  margin-top: 0.25rem;
+}
+
+.post-description {
+  margin-top: 0.5rem;
+  color: var(--ink-muted);
+}
+
+.rss-link {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--ink-muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+
+.rss-link:hover {
+  color: var(--oxblood);
+  border-bottom-color: var(--oxblood);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--ink-muted);
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.back-link:hover {
+  color: var(--oxblood);
+}
+
+.post-date {
+  display: block;
+  color: var(--ink-faint);
+  margin-bottom: 2.5rem;
+  font-size: 0.95em;
+}
+
+.post-body {
+  line-height: 1.6;
+  font-size: 1.05em;
+}
+
+.post-body h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--oxblood);
+}
+
+.post-body p {
+  margin-bottom: 1.25rem;
+}
+
+.post-body a {
+  color: var(--oxblood);
+}
+
+.post-body ul,
+.post-body ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.post-body li {
+  margin-bottom: 0.5rem;
+}
+
+.post-body code {
+  background-color: var(--rule);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.post-body pre {
+  background-color: var(--ink);
+  color: var(--paper);
+  padding: 1rem 1.25rem;
+  border-radius: var(--border-radius-value, 3px);
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+}
+
+.post-body pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+.post-body blockquote {
+  border-left: 3px solid var(--oxblood);
+  padding-left: 1rem;
+  color: var(--ink-muted);
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 640px) {
+  .blog-main {
+    padding: 2rem 1.25rem 4rem;
+  }
+}

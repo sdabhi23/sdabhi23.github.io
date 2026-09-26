@@ -1,0 +1,22 @@
+---
+title: Blog
+permalink: /blog/index.html
+layout: base.njk
+eleventyExcludeFromCollections: true
+---
+<h1 class="font-header">Blog</h1>
+<p class="blog-intro">Notes on AI systems, backend infrastructure, and whatever I'm taking apart next.</p>
+
+<ul class="post-list">
+  {%- for post in collections.posts | reverse %}
+  <li class="post-list-item">
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+    {%- if post.data.description %}
+    <p class="post-description">{{ post.data.description }}</p>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ul>
+
+<a class="rss-link" href="/blog/feed.xml">Subscribe via RSS</a>

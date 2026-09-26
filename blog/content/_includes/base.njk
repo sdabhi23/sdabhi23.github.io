@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title or "Blog" }} &middot; Shrey Dabhi</title>
+  <meta name="description" content="{{ description or 'Notes from Shrey Dabhi.' }}" />
+  <link rel="icon" type="image/png" href="/favicon.svg" />
+
+  <link href="/css/reset.css" rel="stylesheet" media="screen" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Hammersmith+One&display=swap" rel="stylesheet">
+
+  <link href="/css/root.css" rel="stylesheet" media="screen" />
+  <link href="/blog/assets/blog.css" rel="stylesheet" media="screen" />
+
+  <link rel="alternate" type="application/rss+xml" title="Shrey Dabhi &mdash; Blog" href="/blog/feed.xml" />
+</head>
+
+<body class="font-body">
+  <main class="blog-main">
+    <nav class="blog-nav">
+      <a href="/">&larr; Shrey Dabhi</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+    {{ content | safe }}
+  </main>
+</body>
+
+</html>

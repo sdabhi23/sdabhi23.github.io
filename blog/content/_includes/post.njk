@@ -1,0 +1,11 @@
+---
+layout: base.njk
+---
+<article class="blog-post">
+  <a class="back-link" href="/blog/">&larr; Back to blog</a>
+  <h1 class="font-header">{{ title }}</h1>
+  <time class="post-date" datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+  <div class="post-body">
+    {{ content | safe }}
+  </div>
+</article>

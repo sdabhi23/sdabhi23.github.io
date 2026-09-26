@@ -31,13 +31,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: blog/package-lock.json
+      - name: Install blog dependencies
+        working-directory: blog
+        run: npm ci
+      - name: Build blog
+        working-directory: blog
+        run: npm run build
+      - name: Assemble deploy directory
+        run: |
+          mkdir -p _deploy
+          cp -r site/. _deploy/
+          cp -r blog/_site/. _deploy/
       - name: Setup Pages
         uses: actions/configure-pages@v6
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          # Upload entire repository
-          path: './site'
+          path: './_deploy'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
