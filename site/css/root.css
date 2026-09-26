@@ -1,7 +1,5 @@
 :root {
   --box-shadow-preset-1: rgba(140, 47, 47, .14) 5px 5px 0;
-  --box-shadow-preset: rgba(140, 47, 47, .14) 0 5px 0;
-  --box-shadow-preset-hover: rgba(140, 47, 47, .86) 0 5px 0;
   --border-radius-value: 3px;
   --header-height: 4.5rem;
   --content-max-width: 50rem;
@@ -90,6 +88,20 @@ body {
   color: var(--oxblood);
 }
 
+/* site footer, shared across the portfolio and the blog */
+
+.site-footer {
+  border-top: 1px solid var(--rule);
+  padding: 2rem;
+}
+
+.site-footer-inner {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 /* main body elements */
 
 main {
@@ -126,32 +138,18 @@ main {
   gap: 1.5rem;
 }
 
-#links a {
+.site-footer-inner a {
   /* background-color: var(--color-fg); */
   color: var(--color-fg);
   text-decoration: none;
   transition: all 0.5s ease;
   /* border-radius: var(--border-radius-value); */
+  box-shadow: rgba(140, 47, 47, .14) 0 3px 0;
 }
 
-#links a:hover {
+.site-footer-inner a:hover {
   color: var(--oxblood);
-  box-shadow: var(--box-shadow-preset-hover);
-}
-
-#links a {
-  box-shadow: var(--box-shadow-preset);
-}
-
-#cta-links {
-  font-size: 1.25em;
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-}
-
-#cta-links a {
-  padding: 0.75rem 1rem;
+  box-shadow: rgba(140, 47, 47, .36) 0 3px 0;
 }
 
 #social-links {
@@ -162,8 +160,8 @@ main {
 }
 
 #social-links a {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.75rem;
+  height: 1.75rem;
   padding: 0.2rem;
   display: flex;
   align-items: center;
@@ -208,12 +206,8 @@ main {
 
 @media only screen and (max-width: 1000px) {
   :root {
-    --header-height: 6rem;
-    --main-padding: calc(var(--header-height) + 1.5rem) 1.25rem 3rem;
-  }
-
-  body {
     --header-height: 3.75rem;
+    --main-padding: calc(var(--header-height) + 2.5rem) 1.25rem 3rem;
   }
 
   .site-header-inner {
