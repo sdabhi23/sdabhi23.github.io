@@ -30,7 +30,7 @@ description: <description>
 <body, verbatim>
 ```
 
-The `YYYY-MM-DD` prefix in the filename sets the publish date (Eleventy reads it automatically) and the sort order on the listing page and RSS feed. `<slug>` becomes the URL: `/blog/<slug>/`.
+The `YYYY-MM-DD` prefix in the filename sets the publish date (Eleventy reads it automatically) and the sort order on the listing page. `<slug>` becomes the URL: `/blog/<slug>/`.
 
 ## Workflow
 
@@ -38,7 +38,7 @@ The `YYYY-MM-DD` prefix in the filename sets the publish date (Eleventy reads it
 2. Confirm or obtain title, description, and slug for any that are missing. Use today's date unless one is given.
 3. Check `blog/content/posts/` for a filename collision on that date + slug.
 4. Write the post file exactly as shown above.
-5. Run `cd blog && npm install && npm run build` and confirm it succeeds.
+5. Run `cd blog && pnpm install && pnpm run build` and confirm it succeeds.
 6. If the draft came from `blog/drafts/`, remove the draft file (ask first if it's unclear whether the user wants it deleted).
 7. Commit and push to the current branch.
 8. Report the created file, the commit, and the post's URL (`https://shreydabhi.dev/blog/<slug>/`) once merged and deployed.

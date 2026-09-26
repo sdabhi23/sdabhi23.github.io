@@ -1,6 +1,11 @@
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "content/assets": "blog/assets" });
 
+  // Merge the portfolio's static files into the same output, at the root,
+  // so one Eleventy build/serve produces the whole site (portfolio + blog)
+  // and one dev server watches and live-reloads both — no manual copy step.
+  eleventyConfig.addPassthroughCopy({ "../site": "." });
+
   eleventyConfig.addFilter("readableDate", (dateObj) =>
     new Date(dateObj).toLocaleDateString("en-US", {
       year: "numeric",
@@ -11,11 +16,6 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("isoDate", (dateObj) =>
     new Date(dateObj).toISOString().slice(0, 10)
-  );
-
-  // RFC 822 date, as required by the pubDate/lastBuildDate fields in RSS 2.0.
-  eleventyConfig.addFilter("dateRfc822", (dateObj) =>
-    new Date(dateObj).toUTCString()
   );
 
   return {

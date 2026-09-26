@@ -17,16 +17,19 @@
 
   <link href="/css/root.css" rel="stylesheet" media="screen" />
   <link href="/blog/assets/blog.css" rel="stylesheet" media="screen" />
-
-  <link rel="alternate" type="application/rss+xml" title="Shrey Dabhi &mdash; Blog" href="/blog/feed.xml" />
 </head>
 
 <body class="font-body">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-logo font-header" href="/">Shrey Dabhi</a>
+      <nav class="site-nav">
+        <a href="/blog/" aria-current="page">Blog</a>
+        <a href="/resume_shrey_dabhi.pdf">Resume</a>
+      </nav>
+    </div>
+  </header>
   <main class="blog-main">
-    <nav class="blog-nav">
-      <a href="/">&larr; Shrey Dabhi</a>
-      <a href="/blog/">Blog</a>
-    </nav>
     {{ content | safe }}
   </main>
 </body>

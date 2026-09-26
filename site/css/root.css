@@ -1,6 +1,8 @@
 :root {
   --box-shadow-preset-1: rgba(140, 47, 47, .14) 5px 5px 0;
   --border-radius-value: 3px;
+  --header-height: 4.5rem;
+  --content-max-width: 50rem;
 }
 
 body {
@@ -33,26 +35,70 @@ h6 {
 }
 
 body {
-  margin: 2rem 8rem;
+  margin: 0;
   background-color: var(--color-bg);
   color: var(--color-fg);
+}
+
+/* site header, shared across the portfolio and the blog */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: var(--paper);
+  border-bottom: 1px solid var(--rule);
+  z-index: 10;
+}
+
+.site-header-inner {
+  max-width: var(--content-max-width);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  font-size: 1.5em;
+  color: var(--oxblood);
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.site-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 1.05em;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--oxblood);
 }
 
 /* main body elements */
 
 main {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
   display: flex;
-  padding-top: calc(5rem + 110px);
-  gap: 5rem;
-}
-
-#left-pane {
-  width: 70%;
+  flex-direction: column;
+  padding: calc(var(--header-height) + 3rem) 2rem 4rem;
+  gap: 3rem;
 }
 
 #dev-name {
   font-size: 5em;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   color: var(--oxblood);
 }
 
@@ -66,7 +112,7 @@ main {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   gap: 1.5rem;
 }
 
@@ -112,9 +158,9 @@ main {
 
 /* past companies list */
 
-#past-companies {
+/* #past-companies {
   margin-top: 2rem;
-}
+} */
 
 #company-logos {
   margin-top: 1rem;
@@ -134,10 +180,6 @@ main {
   padding: 0 1rem;
 }
 
-#right-pane {
-  width: 30%;
-}
-
 /* github project elements */
 
 #github-projects {
@@ -149,32 +191,26 @@ main {
 }
 
 .github-card-img {
-  max-width: 20rem;
+  max-width: 16rem;
   border-radius: var(--border-radius-value);
   box-shadow: var(--box-shadow-preset-1);
 }
 
 @media only screen and (max-width: 1000px) {
   body {
-    margin: 0;
-    padding: 2rem;
+    --header-height: 3.75rem;
+  }
+
+  .site-header-inner {
+    padding: 0 1.25rem;
   }
 
   main {
-    padding-top: 2rem;
-    flex-direction: column;
+    padding: calc(var(--header-height) + 1rem) 1.25rem 3rem;
     gap: 2rem;
   }
 
-  #left-pane {
-    width: 100%;
-  }
-
-  #right-pane {
-    width: 100%;
-  }
-
   .github-card-img {
-    width: 83vw;
+    max-width: 83vw;
   }
 }

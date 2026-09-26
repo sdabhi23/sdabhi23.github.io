@@ -6,4 +6,3 @@ node_modules/
 !.dev.vars.example
 
 blog/_site/
-_deploy/
