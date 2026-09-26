@@ -7,4 +7,4 @@ I've wanted a place to write short technical notes for a while — the kind of t
 
 This blog lives at `/blog` on the same domain as [my portfolio](/), built with [Eleventy](https://www.11ty.dev/) from plain Markdown files checked into the same repo as everything else here. No database, no CMS backend — just files in git, same as the rest of this site.
 
-Expect posts about AI systems, backend infrastructure, and whatever I end up taking apart next.
+Expect posts about AI systems, backend, infrastructure, and life in general.

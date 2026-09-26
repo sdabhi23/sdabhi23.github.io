@@ -2,7 +2,7 @@
    come from the portfolio's own /css/root.css, loaded before this file. */
 
 .blog-main {
-  padding: calc(var(--header-height) + 2rem) 2rem 6rem;
+  padding: var(--main-padding);
 }
 
 .blog-intro {
@@ -127,6 +127,6 @@
 
 @media (max-width: 640px) {
   .blog-main {
-    padding: calc(var(--header-height) + 1.5rem) 1.25rem 4rem;
+    padding: var(--main-padding);
   }
 }

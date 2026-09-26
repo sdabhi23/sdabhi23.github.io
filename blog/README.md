@@ -14,9 +14,7 @@ Eleventy also passthrough-copies the sibling `../site/` (the portfolio) into its
 
 ## Writing a post
 
-Drop unfinished writing into `drafts/`, or ask Claude Code to publish it — see `.claude/skills/publish-blog-post/SKILL.md`.
-
-To write directly, create `content/posts/YYYY-MM-DD-your-slug.md`:
+Drop unfinished writing into `drafts/`, then when it's ready, create `content/posts/YYYY-MM-DD-your-slug.md`:
 
 ```md
 ---
