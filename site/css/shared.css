@@ -1,3 +1,6 @@
+/* Shared across the portfolio (site/) and the blog (blog/): design
+   tokens, base reset, and the site-wide header/footer chrome. */
+
 :root {
   --box-shadow-preset-1: rgba(140, 47, 47, .14) 5px 5px 0;
   --border-radius-value: 3px;
@@ -41,7 +44,7 @@ body {
   color: var(--color-fg);
 }
 
-/* site header, shared across the portfolio and the blog */
+/* site header */
 
 .site-header {
   position: fixed;
@@ -88,7 +91,7 @@ body {
   color: var(--oxblood);
 }
 
-/* site footer, shared across the portfolio and the blog */
+/* site footer */
 
 .site-footer {
   border-top: 1px solid var(--rule);
@@ -102,48 +105,10 @@ body {
   justify-content: center;
 }
 
-/* main body elements */
-
-main {
-  max-width: var(--content-max-width);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  padding: var(--main-padding);
-  gap: 3rem;
-}
-
-#dev-intro {
-  margin-bottom: 0.5rem;
-  color: var(--ink-muted);
-}
-
-#dev-name {
-  font-size: 2.5em;
-  color: var(--ink);
-  margin-bottom: 0.5rem;
-}
-
-#summary {
-  font-size: 1.25em;
-  line-height: 1.1;
-  color: var(--ink-muted);
-}
-
-#links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
 .site-footer-inner a {
-  /* background-color: var(--color-fg); */
   color: var(--color-fg);
   text-decoration: none;
   transition: all 0.5s ease;
-  /* border-radius: var(--border-radius-value); */
   box-shadow: rgba(140, 47, 47, .14) 0 3px 0;
 }
 
@@ -168,40 +133,15 @@ main {
   justify-content: center;
 }
 
-/* past companies list */
+/* shared page body layout */
 
-#company-logos {
-  margin-top: 1rem;
+main {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-#past-companies img {
-  width: 6rem;
-  height: 3rem;
-  border-radius: var(--border-radius-value);
-  object-fit: contain;
-  box-shadow: var(--box-shadow-preset-1);
-  background-color: #fff;
-  padding: 0 1rem;
-}
-
-/* github project elements */
-
-#github-projects {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.github-card-img {
-  max-width: 16rem;
-  border-radius: var(--border-radius-value);
-  box-shadow: var(--box-shadow-preset-1);
+  flex-direction: column;
+  padding: var(--main-padding);
+  gap: 3rem;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -218,9 +158,5 @@ main {
 
   main {
     gap: 2rem;
-  }
-
-  .github-card-img {
-    max-width: 83vw;
   }
 }

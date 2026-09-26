@@ -1,9 +1,5 @@
-/* Blog-only layout rules. Fonts and color tokens (--paper, --ink, --oxblood, etc.)
-   come from the portfolio's own /css/root.css, loaded before this file. */
-
-.blog-main {
-  padding: var(--main-padding);
-}
+/* Blog-only layout rules. Tokens, fonts, and the shared header/footer/main
+   chrome come from /css/shared.css, loaded before this file. */
 
 .blog-intro {
   color: var(--ink-muted);
@@ -123,10 +119,4 @@
   padding-left: 1rem;
   color: var(--ink-muted);
   margin: 1.5rem 0;
-}
-
-@media (max-width: 640px) {
-  .blog-main {
-    padding: var(--main-padding);
-  }
 }

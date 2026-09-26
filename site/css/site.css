@@ -1,0 +1,61 @@
+/* Portfolio-only rules (site/index.html). Tokens, base reset, and the
+   shared header/footer chrome live in shared.css, loaded before this. */
+
+#dev-intro {
+  margin-bottom: 0.5rem;
+  color: var(--ink-muted);
+}
+
+#dev-name {
+  font-size: 2.5em;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+#summary {
+  font-size: 1.25em;
+  line-height: 1.1;
+  color: var(--ink-muted);
+}
+
+/* past companies list */
+
+#company-logos {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#past-companies img {
+  width: 6rem;
+  height: 3rem;
+  border-radius: var(--border-radius-value);
+  object-fit: contain;
+  box-shadow: var(--box-shadow-preset-1);
+  background-color: #fff;
+  padding: 0 1rem;
+}
+
+/* github project elements */
+
+#github-projects {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.github-card-img {
+  max-width: 16rem;
+  border-radius: var(--border-radius-value);
+  box-shadow: var(--box-shadow-preset-1);
+}
+
+@media only screen and (max-width: 1000px) {
+  .github-card-img {
+    max-width: 83vw;
+  }
+}

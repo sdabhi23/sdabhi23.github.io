@@ -9,7 +9,7 @@ Eleventy also passthrough-copies the sibling `../site/` (the portfolio) into its
 - `content/posts/` — one Markdown file per post, named `YYYY-MM-DD-slug.md`
 - `content/_includes/` — layouts (`base.njk`, `post.njk`)
 - `content/index.njk` — the `/blog` listing page
-- `content/assets/` — blog-only CSS; the portfolio's own CSS (`/css/reset.css`, `/css/root.css`) is reused for fonts and color tokens, so the blog matches the rest of the site
+- `content/assets/` — blog-only CSS; `/css/shared.css` (tokens, fonts, header/footer chrome) is reused so the blog matches the rest of the site
 - `drafts/` — unfinished writing that hasn't been published yet
 
 ## Writing a post
